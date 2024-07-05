@@ -37,29 +37,34 @@
 
 /* Color Palette */
 :root {
-  --ocean-blue: #0077b6;
-  --light-ocean-blue: #caf0f8;
-  --sandy-beige: #f4a261;
-  --light-sandy-beige: #ffe5d9;
-  --coral-pink: #e76f51;
-  --light-coral-pink: #ffb3b1;
-  --seafoam-green: #2a9d8f;
-  --light-seafoam-green: #a8dadc;
-  --soft-white: #f8f9fa;
-  --off-white: #f1faee;
-  --dark-gray: #333333;
+  --ocean-blue: 0, 119, 182;
+  --light-ocean-blue: 202, 240, 248;
+  --sandy-beige: 244, 162, 97;
+  --light-sandy-beige: 255, 229, 217;
+  --coral-pink: 31, 111, 81;
+  --light-coral-pink: 255, 179, 177;
+  --seafoam-green: 42, 157, 143;
+  --light-seafoam-green: 168, 218, 220;
+  --soft-white: 248, 249, 250;
+  --off-white: 241, 250, 238;
+  --dark-gray: 51, 51, 51;
 }
 
 /* Elements */
 body {
   font-family: "Playfair Display", "Lato", sans-serif;
   margin: 0;
+  background-color: rgba(var(--dark-gray), 1);
   color: rgb(255, 0, 0);
 }
 ul {
-  background-color: var(--ocean-blue);
+  padding: 0;
   margin: 0;
   list-style: none;
+}
+li {
+  font-size: large;
+  padding: 5px;
 }
 
 a {
@@ -67,7 +72,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: saddlebrown;
+  color: rgba(var(--ocean-blue));
 }
 
 /* ID Styles */
@@ -76,14 +81,21 @@ a:hover {
   margin: 10px;
 }
 #container {
-  background-color: #333333;
+  background-color: rgba(var(--ocean-blue), 0.5);
   padding: 10px;
-  width: 600px;
+  width: 1000px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #nav {
-  width: 600px;
+  width: auto;
+}
+#nav_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 #main {
 }
@@ -99,75 +111,75 @@ a:hover {
 
 /* Text Colors */
 .text-ocean-blue {
-  color: var(--ocean-blue);
+  color: rgba(var(--ocean-blue));
 }
 .text-light-ocean-blue {
-  color: var(--light-ocean-blue);
+  color: rgba(var(--light-ocean-blue));
 }
 .text-sandy-beige {
-  color: var(--sandy-beige);
+  color: rgba(var(--sandy-beige));
 }
 .text-light-sandy-beige {
-  color: var(--light-sandy-beige);
+  color: rgba(var(--light-sandy-beige));
 }
 .text-coral-pink {
-  color: var(--coral-pink);
+  color: rgba(var(--coral-pink));
 }
 .text-light-coral-pink {
-  color: var(--light-coral-pink);
+  color: rgba(var(--light-coral-pink));
 }
 .text-seafoam-green {
-  color: var(--seafoam-green);
+  color: rgba(var(--seafoam-green));
 }
 .text-light-seafoam-green {
-  color: var(--light-seafoam-green);
+  color: rgba(var(--light-seafoam-green));
 }
 .text-soft-white {
-  color: var(--soft-white);
+  color: rgba(var(--soft-white));
 }
 .text-off-white {
-  color: var(--off-white);
+  color: rgba(var(--off-white));
 }
 .text-dark-gray {
-  color: var(--dark-gray);
+  color: rgba(var(--dark-gray));
 }
 
-/* Classes for Background Colors */
+/* Background Colors */
 .bg-ocean-blue {
-  background-color: var(--ocean-blue);
+  background-color: rgba(var(--ocean-blue));
 }
 .bg-light-ocean-blue {
-  background-color: var(--light-ocean-blue);
+  background-color: rgba(var(--light-ocean-blue));
 }
 .bg-sandy-beige {
-  background-color: var(--sandy-beige);
+  background-color: rgba(var(--sandy-beige));
 }
 .bg-light-sandy-beige {
-  background-color: var(--light-sandy-beige);
+  background-color: rgba(var(--light-sandy-beige));
 }
 .bg-coral-pink {
-  background-color: var(--coral-pink);
+  background-color: rgba(var(--coral-pink));
 }
 .bg-light-coral-pink {
-  background-color: var(--light-coral-pink);
+  background-color: rgba(var(--light-coral-pink));
 }
 .bg-seafoam-green {
-  background-color: var(--seafoam-green);
+  background-color: rgba(var(--seafoam-green));
 }
 .bg-light-seafoam-green {
-  background-color: var(--light-seafoam-green);
+  background-color: rgba(var(--light-seafoam-green));
 }
 .bg-soft-white {
-  background-color: var(--soft-white);
+  background-color: rgba(var(--soft-white));
 }
 .bg-off-white {
-  background-color: var(--off-white);
+  background-color: rgba(var(--off-white));
 }
 .bg-dark-gray {
-  background-color: var(--dark-gray);
+  background-color: rgba(var(--dark-gray));
 }
 
-/* Fonts */
+/* Font Styles */
 .font-light {
   font-weight: 300;
 }
@@ -192,11 +204,11 @@ a:hover {
   font-weight: 700;
 }
 
+/* Fonts*/
 /* Montserrat Font */
 .montserrat {
   font-family: "Montserrat";
 }
-
 /* Playfair Font*/
 .playfair {
   font-family: "Playfair Display", serif;
@@ -205,7 +217,6 @@ a:hover {
 .lato {
   font-family: "Lato", serif;
 }
-
 /* Lato Font Specials */
 .lato-thin {
   font-family: "Lato", serif;
