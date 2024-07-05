@@ -41,13 +41,14 @@
   --light-ocean-blue: 202, 240, 248;
   --sandy-beige: 244, 162, 97;
   --light-sandy-beige: 255, 229, 217;
-  --coral-pink: 31, 111, 81;
+  --coral-pink: 231, 111, 81;
   --light-coral-pink: 255, 179, 177;
   --seafoam-green: 42, 157, 143;
   --light-seafoam-green: 168, 218, 220;
   --soft-white: 248, 249, 250;
   --off-white: 241, 250, 238;
   --dark-gray: 51, 51, 51;
+  --NOT-CORRECT-FORMATED: 255, 0, 0;
 }
 
 /* Elements */
@@ -55,7 +56,7 @@ body {
   font-family: "Playfair Display", "Lato", sans-serif;
   margin: 0;
   background-color: rgba(var(--dark-gray), 1);
-  color: rgb(255, 0, 0);
+  color: rgba(var(--NOT-CORRECT-FORMATED));
 }
 ul {
   padding: 0;
@@ -88,15 +89,14 @@ a:hover {
   align-items: center;
   justify-content: space-between;
 }
-
 #nav {
   width: auto;
 }
 #nav_links {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
+
 #main {
 }
 #footer {
@@ -106,7 +106,7 @@ a:hover {
   padding: 5px;
   font-size: 45px;
   text-transform: uppercase;
-  text-shadow: 3px 3px 10px var(--ocean-blue);
+  text-shadow: 5px 3px 5px rgba(var(--coral-pink), 1);
 }
 
 /* Text Colors */
@@ -209,6 +209,7 @@ a:hover {
 .montserrat {
   font-family: "Montserrat";
 }
+
 /* Playfair Font*/
 .playfair {
   font-family: "Playfair Display", serif;
@@ -217,6 +218,7 @@ a:hover {
 .lato {
   font-family: "Lato", serif;
 }
+
 /* Lato Font Specials */
 .lato-thin {
   font-family: "Lato", serif;
