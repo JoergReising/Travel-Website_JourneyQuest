@@ -58,18 +58,15 @@ body {
   background-color: rgba(var(--dark-gray), 1);
   color: rgba(var(--NOT-CORRECT-FORMATED));
 }
+
 ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
+
 li {
-  font-size: large;
-  padding: 5px;
 }
 
 a {
-  color: sandybrown;
+  color: rgba(var(--NOT-CORRECT-FORMATED));
   text-decoration: none;
 }
 a:hover {
@@ -81,7 +78,7 @@ a:hover {
   padding: 0;
   margin: 10px;
 }
-#container {
+#header #container {
   background-color: rgba(var(--ocean-blue), 0.5);
   padding: 10px;
   width: 1000px;
@@ -89,12 +86,22 @@ a:hover {
   align-items: center;
   justify-content: space-between;
 }
-#nav {
+#container #navbar {
+  padding: 5px;
+  margin: 10px;
   width: auto;
 }
-#nav_links {
+#container #nav_links {
   display: flex;
   flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#container #nav_links li {
+  font-size: large;
+  padding: 5px;
 }
 
 #main {
