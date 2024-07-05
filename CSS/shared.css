@@ -1,0 +1,213 @@
+/*Quick Class Index (Text Font & Color)
+---
+# Font Names
+  .playfair 
+  .lato 
+
+# Font Styles
+  .font-light
+  .font-regular
+  .font-bold
+  .font-black
+  .italic
+  .italic-regular
+  .italic-bold
+
+# Font Specials 
+  .lato-thin 
+  .lato-thin-italic 
+  .lato-light
+  .lato-light-italic 
+---
+# Text Colors
+  .text-ocean-blue
+  .text-light-ocean-blue 
+  .text-sandy-beige
+  .text-light-sandy-beige 
+  .text-coral-pink 
+  .text-light-coral-pink 
+  .text-seafoam-green 
+  .text-light-seafoam-green 
+  .text-soft-white 
+  .text-off-white 
+  .text-dark-gray
+---
+*/
+
+/* Color Palette */
+:root {
+  --ocean-blue: #0077b6;
+  --light-ocean-blue: #caf0f8;
+  --sandy-beige: #f4a261;
+  --light-sandy-beige: #ffe5d9;
+  --coral-pink: #e76f51;
+  --light-coral-pink: #ffb3b1;
+  --seafoam-green: #2a9d8f;
+  --light-seafoam-green: #a8dadc;
+  --soft-white: #f8f9fa;
+  --off-white: #f1faee;
+  --dark-gray: #333333;
+}
+
+/* Elements */
+body {
+  font-family: "Playfair Display", "Lato", sans-serif;
+  margin: 0;
+}
+div {
+  background-color: aqua;
+}
+a {
+  color: sandybrown;
+  text-decoration: none;
+}
+a:hover {
+  color: saddlebrown;
+}
+
+/* ID Styles */
+#header {
+  background-color: black;
+}
+#main {
+}
+#footer {
+}
+#page-logo {
+  margin: 10px;
+  padding: 10px;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 10px var(--light-sandy-beige);
+}
+
+/* Text Colors */
+.text-ocean-blue {
+  color: var(--ocean-blue);
+}
+.text-light-ocean-blue {
+  color: var(--light-ocean-blue);
+}
+.text-sandy-beige {
+  color: var(--sandy-beige);
+}
+.text-light-sandy-beige {
+  color: var(--light-sandy-beige);
+}
+.text-coral-pink {
+  color: var(--coral-pink);
+}
+.text-light-coral-pink {
+  color: var(--light-coral-pink);
+}
+.text-seafoam-green {
+  color: var(--seafoam-green);
+}
+.text-light-seafoam-green {
+  color: var(--light-seafoam-green);
+}
+.text-soft-white {
+  color: var(--soft-white);
+}
+.text-off-white {
+  color: var(--off-white);
+}
+.text-dark-gray {
+  color: var(--dark-gray);
+}
+
+/* Classes for Background Colors */
+.bg-ocean-blue {
+  background-color: var(--ocean-blue);
+}
+.bg-light-ocean-blue {
+  background-color: var(--light-ocean-blue);
+}
+.bg-sandy-beige {
+  background-color: var(--sandy-beige);
+}
+.bg-light-sandy-beige {
+  background-color: var(--light-sandy-beige);
+}
+.bg-coral-pink {
+  background-color: var(--coral-pink);
+}
+.bg-light-coral-pink {
+  background-color: var(--light-coral-pink);
+}
+.bg-seafoam-green {
+  background-color: var(--seafoam-green);
+}
+.bg-light-seafoam-green {
+  background-color: var(--light-seafoam-green);
+}
+.bg-soft-white {
+  background-color: var(--soft-white);
+}
+.bg-off-white {
+  background-color: var(--off-white);
+}
+.bg-dark-gray {
+  background-color: var(--dark-gray);
+}
+
+/* Fonts */
+.font-light {
+  font-weight: 300;
+}
+.font-regular {
+  font-weight: 400;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-black {
+  font-weight: 900;
+}
+.italic {
+  font-style: italic;
+}
+.italic-regular {
+  font-style: italic;
+  font-weight: 400;
+}
+.italic-bold {
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* Montserrat Font */
+.montserrat {
+  font-family: "Montserrat";
+}
+
+/* Playfair Font*/
+.playfair {
+  font-family: "Playfair Display", serif;
+}
+/* Lato Font*/
+.lato {
+  font-family: "Lato", serif;
+}
+
+/* Lato Font Specials */
+.lato-thin {
+  font-family: "Lato", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.lato-thin-italic {
+  font-family: "Lato", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+.lato-light {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.lato-light-italic {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: italic;
+}

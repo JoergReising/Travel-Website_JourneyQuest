@@ -1,0 +1,23 @@
+div {
+  background-color: aqua;
+}
+
+a {
+  color: sandybrown;
+  text-decoration: none;
+}
+a:hover {
+  color: saddlebrown;
+}
+/* ID Styles */
+/* Structure*/
+
+#header {
+  background-color: black;
+}
+
+#main {
+}
+
+#footer {
+}
