@@ -1,0 +1,58 @@
+/* Custom ID Styles */
+#globalheader {
+  background-color: rgba(var(--ocean-blue), 0.5);
+  padding: 0;
+  margin: 0;
+}
+#globalnav {
+  padding: 0 10px;
+  margin: 0 15px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#globalnav-content {
+  padding: 5px;
+  margin: 10px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+#globalnav-logo {
+  margin: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  /*text-shadow: 5px 3px 5px rgba(var(--coral-pink), 1);*/
+}
+
+/* CLASSES */
+
+.globalnav-logo {
+  font-size: 30px;
+  color: rgba(var(--light-ocean-blue));
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Lato", serif;
+  text-decoration: none;
+}
+
+.globalnav-logo:hover {
+  color: rgba(var(--ocean-blue));
+}
+
+.globalnav-item {
+  font-size: large;
+  padding: 5px;
+  color: rgba(var(--light-ocean-blue));
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Lato", serif;
+  text-decoration: none;
+}
+.globalnav-item:hover {
+  color: rgba(var(--ocean-blue));
+}
