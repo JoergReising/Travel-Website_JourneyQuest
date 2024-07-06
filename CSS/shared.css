@@ -104,41 +104,6 @@ a {
   color: rgba(var(--dark-gray));
 }
 
-/* Background Colors */
-.bg-ocean-blue {
-  background-color: rgba(var(--ocean-blue));
-}
-.bg-light-ocean-blue {
-  background-color: rgba(var(--light-ocean-blue));
-}
-.bg-sandy-beige {
-  background-color: rgba(var(--sandy-beige));
-}
-.bg-light-sandy-beige {
-  background-color: rgba(var(--light-sandy-beige));
-}
-.bg-coral-pink {
-  background-color: rgba(var(--coral-pink));
-}
-.bg-light-coral-pink {
-  background-color: rgba(var(--light-coral-pink));
-}
-.bg-seafoam-green {
-  background-color: rgba(var(--seafoam-green));
-}
-.bg-light-seafoam-green {
-  background-color: rgba(var(--light-seafoam-green));
-}
-.bg-soft-white {
-  background-color: rgba(var(--soft-white));
-}
-.bg-off-white {
-  background-color: rgba(var(--off-white));
-}
-.bg-dark-gray {
-  background-color: rgba(var(--dark-gray));
-}
-
 /* Font Styles */
 .font-light {
   font-weight: 300;
