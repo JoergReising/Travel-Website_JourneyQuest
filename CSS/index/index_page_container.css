@@ -14,8 +14,7 @@
   --red-not-format: 255, 0, 0;
 }
 
-/* Custom ID Styles */
-
+/* PAGE'S CONTAINER */
 #pages_container {
 }
 
@@ -63,6 +62,7 @@
 #discover_box a:hover {
   color: rgba(var(--light-seafoam-green), 1);
 }
+/* CLASSES */
 
 /* Highlight Section */
 /* IDs */
