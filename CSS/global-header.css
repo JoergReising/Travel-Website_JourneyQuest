@@ -16,9 +16,14 @@
 
 /* Custom ID Styles */
 #globalheader {
-  background-color: rgba(var(--sandy-beige), 0.5);
+  background-color: rgba(var(--seafoam-green), 0.7);
   padding: 0;
   margin: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
 }
 #globalnav {
   padding: 0 10px;
@@ -59,7 +64,7 @@
 }
 
 .globalnav-logo:hover {
-  color: rgba(var(--seafoam-green));
+  color: rgba(var(--ocean-blue), 0.8);
 }
 
 .globalnav-item {
@@ -72,5 +77,5 @@
   text-decoration: none;
 }
 .globalnav-item:hover {
-  color: rgba(var(--seafoam-green));
+  color: rgba(var(--ocean-blue), 0.8);
 }

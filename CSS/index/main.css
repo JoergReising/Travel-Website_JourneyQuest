@@ -32,44 +32,53 @@ a {
 
 #hero {
   height: 500px;
-  background-image: url(/Assets/destinations/Images/pexels-vladimir-miranda-238542436-19226163.jpg);
+  background-image: url(/Assets/index/images/hero-section/pexels-vladimir-miranda-238542436-19226163.jpg);
   background-position: center;
   background-size: cover;
 }
 
 #hero-content {
-  padding: auto;
-  margin: auto;
-  width: 900px;
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+  top: 150px;
+  position: relative;
+  box-sizing: border-box;
   background-color: rgba(var(--dark-gray), 0.6);
   box-shadow: 2px 4px 8px rgba(var(--dark-gray), 0.6);
   border-radius: 8px;
   text-align: center;
-  position: relative;
-  top: 180px;
-}
-
-#highlights {
 }
 
 #hero-content h1 {
   margin: 0;
-  color: rgba(var(--soft-white), 1);
+  color: rgba(var(--light-ocean-blue), 1);
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 #hero-content p {
-  margin: 0;
+  margin-bottom: 25px;
   color: rgba(var(--soft-white), 1);
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 #hero-content a {
-  margin: 0;
+  padding: 10px;
+  margin: inherit;
+  text-decoration: none;
+  background-color: rgba(var(--seafoam-green));
   color: rgba(var(--soft-white), 1);
+  border-radius: 8px;
 }
 
 #hero-content a:hover {
-  margin: 0;
-  color: rgba(var(--seafoam-green), 1);
+  color: rgba(var(--light-seafoam-green), 1);
+}
+
+#highlights {
 }
 
 /* CLASSES */
