@@ -15,7 +15,7 @@
 }
 
 /* Custom ID Styles */
-#globalheader {
+#site_header {
   background-color: rgba(var(--seafoam-green), 0.7);
   padding: 0;
   margin: 0;
@@ -25,18 +25,18 @@
   left: 0;
   box-sizing: border-box;
 }
-#globalnav {
+#global_nav {
   padding: 0 10px;
   margin: 0 15px;
 }
-#globalnav-content {
+#global_nav_content {
   width: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-#globalnav-menu {
+#global_nav_menu {
   padding: 5px;
   margin: 10px;
   width: auto;
@@ -45,7 +45,7 @@
   list-style: none;
 }
 
-#globalnav-logo {
+#global_nav_logo {
   margin: 10px;
   padding: 5px;
   text-transform: uppercase;
@@ -54,7 +54,7 @@
 
 /* CLASSES */
 
-.globalnav-logo {
+.global_nav_logo {
   font-size: 30px;
   color: rgba(var(--light-seafoam-green));
   font-weight: 300;
@@ -63,11 +63,11 @@
   text-decoration: none;
 }
 
-.globalnav-logo:hover {
-  color: rgba(var(--ocean-blue), 0.8);
+.global_nav_logo:hover {
+  color: rgba(var(--soft-white), 0.8);
 }
 
-.globalnav-item {
+.global_nav_item {
   font-size: large;
   padding: 5px;
   color: rgba(var(--light-seafoam-green));
@@ -76,6 +76,6 @@
   font-family: "Lato", serif;
   text-decoration: none;
 }
-.globalnav-item:hover {
-  color: rgba(var(--ocean-blue), 0.8);
+.global_nav_item:hover {
+  color: rgba(var(--soft-white), 0.8);
 }
