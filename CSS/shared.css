@@ -77,6 +77,13 @@ h1 {
   font-style: italic;
 }
 
+h2 {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: xx-large;
+  font-style: italic;
+}
+
 /* Custom ID Styles */
 
 /* CLASSES */
