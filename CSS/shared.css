@@ -65,6 +65,13 @@ a {
   cursor: pointer;
 }
 
+h1 {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: xx-large;
+  font-style: italic;
+}
+
 /* Custom ID Styles */
 
 /* CLASSES */

@@ -23,13 +23,15 @@
 #globalnav {
   padding: 0 10px;
   margin: 0 15px;
+}
+#globalnav-content {
   width: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-#globalnav-content {
+#globalnav-menu {
   padding: 5px;
   margin: 10px;
   width: auto;
