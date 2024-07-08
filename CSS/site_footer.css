@@ -1,0 +1,26 @@
+/* Color Palette */
+:root {
+  --ocean-blue: 0, 119, 182;
+  --light-ocean-blue: 202, 240, 248;
+  --sandy-beige: 244, 162, 97;
+  --light-sandy-beige: 255, 229, 217;
+  --coral-pink: 231, 111, 81;
+  --light-coral-pink: 255, 179, 177;
+  --seafoam-green: 42, 157, 143;
+  --light-seafoam-green: 168, 218, 220;
+  --soft-white: 248, 249, 250;
+  --off-white: 241, 250, 238;
+  --dark-gray: 51, 51, 51;
+  --red-not-format: 255, 0, 0;
+}
+
+/* Custom ID Styles */
+#footer_container {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--seafoam-green)),
+    rgba(var(--light-seafoam-green))
+  );
+}
+
+/* CLASSES */
