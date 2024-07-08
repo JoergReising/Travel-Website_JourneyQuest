@@ -1,0 +1,153 @@
+/* Color Palette */
+:root {
+  --ocean-blue: 0, 119, 182;
+  --light-ocean-blue: 202, 240, 248;
+  --sandy-beige: 244, 162, 97;
+  --light-sandy-beige: 255, 229, 217;
+  --coral-pink: 231, 111, 81;
+  --light-coral-pink: 255, 179, 177;
+  --seafoam-green: 42, 157, 143;
+  --light-seafoam-green: 168, 218, 220;
+  --soft-white: 248, 249, 250;
+  --off-white: 241, 250, 238;
+  --dark-gray: 51, 51, 51;
+  --red-not-format: 255, 0, 0;
+  /* Paleta no2 */
+  --beige-pink: 219, 201, 189;
+  --light-beige: 214, 201, 183;
+  --light-gray: 178, 178, 177;
+  --medium-gray: 93, 105, 105;
+  --dark-gray: 56, 56, 51;
+  --blue-gray: 98, 131, 158;
+  --muted-teal: 96, 149, 153;
+  --gold: 255, 215, 0;
+  --burnt-orange: 252, 159, 41;
+  --dark-brown: 123, 76, 52;
+  --plant-green: 80, 200, 120;
+  --palm-green: 68, 112, 75;
+  /* Final Palette */
+}
+
+/* CLASSES */
+
+.color_sample {
+  width: 200px;
+  height: 50px;
+  padding: auto none;
+  margin: auto;
+}
+
+/* IDs */
+#site_color_palette {
+  text-align: center;
+}
+
+#site_color_palette h2 {
+  text-transform: uppercase;
+  font-size: 35px;
+  color: rgba(var(--off-white));
+}
+
+#color_palette_content {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#palette_1_no-1 {
+  background: rgba(var(--dark-gray));
+}
+
+#palette_1_no-2 {
+  background: rgba(var(--soft-white));
+}
+
+#palette_1_no-3 {
+  background: rgba(var(--off-white));
+}
+
+#palette_1_no-4 {
+  background: rgba(var(--light-sandy-beige));
+}
+
+#palette_1_no-5 {
+  background: rgba(var(--light-coral-pink));
+}
+
+#palette_1_no-6 {
+  background: rgba(var(--light-seafoam-green));
+}
+
+#palette_1_no-7 {
+  background: rgba(var(--light-ocean-blue));
+}
+
+#palette_1_no-8 {
+  background: rgba(var(--sandy-beige));
+}
+
+#palette_1_no-9 {
+  background: rgba(var(--coral-pink));
+}
+
+#palette_1_no-10 {
+  background: rgba(var(--seafoam-green));
+}
+
+#palette_1_no-11 {
+  background: rgba(var(--ocean-blue));
+}
+
+#palette_1_no-12 {
+  background: rgba(var(--red-not-format));
+}
+
+/* Palette 2 */
+
+#palette_2_no-1 {
+  background: rgba(var(--soft-white));
+}
+
+#palette_2_no-2 {
+  background: rgba(var(--light-beige));
+}
+
+#palette_2_no-3 {
+  background: rgba(var(--light-gray));
+}
+
+#palette_2_no-4 {
+  background: rgba(var(--medium-gray));
+}
+
+#palette_2_no-5 {
+  background: rgba(var(--dark-gray));
+}
+
+#palette_2_no-6 {
+  background: rgba(var(--blue-gray));
+}
+
+#palette_2_no-7 {
+  background: rgba(var(--muted-teal));
+}
+
+#palette_2_no-8 {
+  background: rgba(var(--light-seafoam-green));
+}
+
+#palette_2_no-9 {
+  background: rgba(var(--gold));
+}
+
+#palette_2_no-10 {
+  background: rgba(var(--burnt-orange));
+}
+
+#palette_2_no-11 {
+  background: rgba(var(--dark-brown));
+}
+
+#palette_2_no-12 {
+  background: rgba(var(--palm-green));
+}
