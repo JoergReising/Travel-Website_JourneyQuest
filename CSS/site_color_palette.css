@@ -25,8 +25,21 @@
   --dark-brown: 123, 76, 52;
   --plant-green: 80, 200, 120;
   --palm-green: 68, 112, 75;
+  --moss-green: 113, 168, 80;
   /* Final Palette */
-}
+  --soft-white: 248, 249, 250; ;
+  --light-beige: 214, 201, 183;
+  --light-gray: 178, 178, 177;
+  --medium-gray: 93, 105, 105;
+  --dark-gray: 56, 56, 51;
+  --blue-gray: 98, 131, 158;
+  --muted-teal: 96, 149, 153;
+  --light-seafoam-green: 168, 218, 220;
+  --gold: 255, 215, 0;
+  --burnt-orange: 252, 159, 41;
+  --dark-brown: 123, 76, 52;
+  --plant-green: 80, 200, 120;
+  
 
 /* CLASSES */
 
@@ -149,5 +162,5 @@
 }
 
 #palette_2_no-12 {
-  background: rgba(var(--palm-green));
+  background: rgba(var(--plant-green));
 }
