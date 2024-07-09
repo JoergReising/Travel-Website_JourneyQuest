@@ -1,33 +1,6 @@
 /* Color Palette */
 :root {
-  --ocean-blue: 0, 119, 182;
-  --light-ocean-blue: 202, 240, 248;
-  --sandy-beige: 244, 162, 97;
-  --light-sandy-beige: 255, 229, 217;
-  --coral-pink: 231, 111, 81;
-  --light-coral-pink: 255, 179, 177;
-  --seafoam-green: 42, 157, 143;
-  --light-seafoam-green: 168, 218, 220;
   --soft-white: 248, 249, 250;
-  --off-white: 241, 250, 238;
-  --dark-gray: 51, 51, 51;
-  --red-not-format: 255, 0, 0;
-  /* Paleta no2 */
-  --beige-pink: 219, 201, 189;
-  --light-beige: 214, 201, 183;
-  --light-gray: 178, 178, 177;
-  --medium-gray: 93, 105, 105;
-  --dark-gray: 56, 56, 51;
-  --blue-gray: 98, 131, 158;
-  --muted-teal: 96, 149, 153;
-  --gold: 255, 215, 0;
-  --burnt-orange: 252, 159, 41;
-  --dark-brown: 123, 76, 52;
-  --plant-green: 80, 200, 120;
-  --palm-green: 68, 112, 75;
-  --moss-green: 113, 168, 80;
-  /* Final Palette */
-  --soft-white: 248, 249, 250; ;
   --light-beige: 214, 201, 183;
   --light-gray: 178, 178, 177;
   --medium-gray: 93, 105, 105;
@@ -39,8 +12,7 @@
   --burnt-orange: 252, 159, 41;
   --dark-brown: 123, 76, 52;
   --plant-green: 80, 200, 120;
-  
-
+}
 /* CLASSES */
 
 .color_sample {
@@ -53,6 +25,7 @@
 /* IDs */
 #site_color_palette {
   text-align: center;
+  position: static;
 }
 
 #site_color_palette h2 {
