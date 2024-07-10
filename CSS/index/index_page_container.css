@@ -12,11 +12,34 @@
   --burnt-orange: 252, 159, 41;
   --dark-brown: 123, 76, 52;
   --plant-green: 80, 200, 120;
+  --medium-aquamarine: 79, 182, 153;
+  --deep-space-sparkle: 64, 95, 115;
+  --indian-red: 183, 101, 80;
+  --isabelline: 243, 239, 236;
+  --charcoal: 54, 68, 79;
+  --illuminating-emerald: 57, 153, 126;
+  --middle-blue-green: 138, 228, 202;
+  --white: 255, 255, 255;
+  --old-gold: 209, 192, 76;
+  --slate-gray: 102, 121, 136;
+  /* PASTEL VARIATION */
+  --pastel-medium-aquamarine: 174, 217, 204;
+  --pastel-deep-space-sparkle: 160, 187, 200;
+  --pastel-indian-red: 212, 165, 154;
+  --pastel-isabelline: 250, 248, 247;
+  --pastel-charcoal: 166, 177, 184;
+  --pastel-illuminating-emerald: 159, 207, 192;
+  --pastel-middle-blue-green: 195, 238, 227;
+  --pastel-old-gold: 235, 228, 162;
+  --pastel-slate-gray: 186, 197, 206;
 }
 
 /* PAGE'S CONTAINER */
+
 #main_container {
-  position: static;
+  position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
   height: auto;
   overflow: visible;
@@ -25,37 +48,38 @@
 /* Discover Section */
 /* IDs*/
 
+#discover_section {
+  height: 500px;
+  background-image: url(/Assets/index/images/discover-section/pexels-vladimir-miranda-238542436-19226163.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
 #gradient_separator_top-bottom {
   width: 100%;
-  height: 50px;
+  height: 100px;
   background: linear-gradient(
     180deg,
-    rgba(var(--light-gray), 0.7),
+    rgba(var(--charcoal), 0.5),
     rgba(0, 0, 0, 0)
   );
-  position: relative;
+  position: absolute;
 }
 
 #gradient_separator_bottom-top {
   width: 100%;
-  height: 50px;
+  height: 100px;
   background: linear-gradient(
     0deg,
-    rgba(var(--light-gray), 0.7),
+    rgba(var(--charcoal), 0.5),
     rgba(0, 0, 0, 0)
   );
   position: absolute;
   bottom: 0;
 }
 
-#discover {
-  height: 500px;
-  background-image: url(/Assets/index/images/discover-section/pexels-vladimir-miranda-238542436-19226163.jpg);
-  background-position: center;
-  background-size: cover;
-  position: static;
-  width: 100%;
-}
 #discover_box {
   padding: 20px 0;
   margin: 0 auto;
@@ -64,7 +88,7 @@
   position: relative;
   box-sizing: border-box;
   top: 150px;
-  background-color: rgba(var(--dark-gray), 0.6);
+  background-color: rgba(var(--charcoal), 0.6);
   box-shadow: 2px 4px 8px rgba(var(--dark-gray), 0.6);
   border-radius: 8px;
   text-align: center;
@@ -72,27 +96,32 @@
 
 #discover_box h1 {
   margin: 0;
-  color: rgba(var(--light-ocean-blue), 1);
+  color: rgba(var(--old-gold), 1);
   text-transform: uppercase;
-  font-weight: 500;
+  font-family: "Lato";
+  font-weight: 900;
 }
 #discover_box p {
   margin-bottom: 25px;
-  color: rgba(var(--soft-white), 1);
+  color: rgba(var(--isabelline), 1);
+  font-family: "Lato";
   font-weight: 300;
   text-transform: uppercase;
 }
 #discover_box a {
   padding: 10px;
   margin: inherit;
+  background-color: rgba(var(--old-gold));
+  color: rgba(var(--charcoal), 1);
+  font-family: "Lato";
   text-decoration: none;
-  background-color: rgba(var(--seafoam-green));
-  color: rgba(var(--soft-white), 1);
   border-radius: 8px;
 }
 #discover_box a:hover {
-  color: rgba(var(--light-seafoam-green), 1);
+  background-color: rgba(var(--charcoal));
+  color: rgba(var(--old-gold), 1);
 }
+
 /* CLASSES */
 
 /* Highlight Section */
@@ -101,8 +130,9 @@
 #highlights {
   text-align: center;
   position: static;
+  width: 100%;
   padding: 24px;
-  background: linear-gradient(0deg, rgba(var(--seafoam-green)), rgba(0, 0, 0));
+  background: linear-gradient(0deg, rgba(var(--medium-gray)), rgba(0, 0, 0));
 }
 
 #highlights h2 {

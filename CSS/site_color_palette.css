@@ -1,7 +1,7 @@
 /* Color Palette */
 :root {
   --soft-white: 248, 249, 250;
-  --light-beige: 214, 201, 183;
+  --light-beige: 214, 201, 183; /* USED*/
   --light-gray: 178, 178, 177;
   --medium-gray: 93, 105, 105;
   --dark-gray: 56, 56, 51;
@@ -12,6 +12,29 @@
   --burnt-orange: 252, 159, 41;
   --dark-brown: 123, 76, 52;
   --plant-green: 80, 200, 120;
+}
+
+:root {
+  --medium-aquamarine: 79, 182, 153;
+  --deep-space-sparkle: 64, 95, 115;
+  --indian-red: 183, 101, 80; /* USED*/
+  --isabelline: 243, 239, 236;
+  --charcoal: 54, 68, 79; /* USED*/
+  --illuminating-emerald: 57, 153, 126;
+  --middle-blue-green: 138, 228, 202;
+  --white: 255, 255, 255;
+  --old-gold: 209, 192, 76; /* USED*/
+  --slate-gray: 102, 121, 136;
+  /* PASTEL VARIATION */
+  --pastel-medium-aquamarine: 174, 217, 204;
+  --pastel-deep-space-sparkle: 160, 187, 200;
+  --pastel-indian-red: 212, 165, 154;
+  --pastel-isabelline: 250, 248, 247;
+  --pastel-charcoal: 166, 177, 184;
+  --pastel-illuminating-emerald: 159, 207, 192;
+  --pastel-middle-blue-green: 195, 238, 227;
+  --pastel-old-gold: 235, 228, 162;
+  --pastel-slate-gray: 186, 197, 206;
 }
 /* CLASSES */
 
@@ -41,51 +64,43 @@
 }
 
 #palette_1_no-1 {
-  background: rgba(var(--dark-gray));
+  background: rgba(var(--medium-aquamarine));
 }
 
 #palette_1_no-2 {
-  background: rgba(var(--soft-white));
+  background: rgba(var(--deep-space-sparkle));
 }
 
 #palette_1_no-3 {
-  background: rgba(var(--off-white));
+  background: rgba(var(--indian-red));
 }
 
 #palette_1_no-4 {
-  background: rgba(var(--light-sandy-beige));
+  background: rgba(var(--isabelline));
 }
 
 #palette_1_no-5 {
-  background: rgba(var(--light-coral-pink));
+  background: rgba(var(--charcoal));
 }
 
 #palette_1_no-6 {
-  background: rgba(var(--light-seafoam-green));
+  background: rgba(var(--illuminating-emerald));
 }
 
 #palette_1_no-7 {
-  background: rgba(var(--light-ocean-blue));
+  background: rgba(var(--middle-blue-green));
 }
 
 #palette_1_no-8 {
-  background: rgba(var(--sandy-beige));
+  background: rgba(var(--white));
 }
 
 #palette_1_no-9 {
-  background: rgba(var(--coral-pink));
+  background: rgba(var(--old-gold));
 }
 
 #palette_1_no-10 {
-  background: rgba(var(--seafoam-green));
-}
-
-#palette_1_no-11 {
-  background: rgba(var(--ocean-blue));
-}
-
-#palette_1_no-12 {
-  background: rgba(var(--red-not-format));
+  background: rgba(var(--slate-gray));
 }
 
 /* Palette 2 */
@@ -136,4 +151,46 @@
 
 #palette_2_no-12 {
   background: rgba(var(--plant-green));
+}
+
+/* Pallete no. 3*/
+
+#palette_3_no-1 {
+  background: rgba(var(--pastel-medium-aquamarine));
+}
+
+#palette_3_no-2 {
+  background: rgba(var(--pastel-deep-space-sparkle));
+}
+
+#palette_3_no-3 {
+  background: rgba(var(--pastel-indian-red));
+}
+
+#palette_3_no-4 {
+  background: rgba(var(--pastel-isabelline));
+}
+
+#palette_3_no-5 {
+  background: rgba(var(--pastel-charcoal));
+}
+
+#palette_3_no-6 {
+  background: rgba(var(--pastel-illuminating-emerald));
+}
+
+#palette_3_no-7 {
+  background: rgba(var(--pastel-middle-blue-green));
+}
+
+#palette_3_no-8 {
+  background: rgba(var(--white));
+}
+
+#palette_3_no-9 {
+  background: rgba(var(--pastel-old-gold));
+}
+
+#palette_3_no-10 {
+  background: rgba(var(--pastel-slate-gray));
 }

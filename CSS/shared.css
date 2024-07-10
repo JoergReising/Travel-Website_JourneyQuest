@@ -35,7 +35,8 @@
 ---
 */
 
-/* Color Palette */
+/* Color Palette 
+
 :root {
   --ocean-blue: 0, 119, 182;
   --light-ocean-blue: 202, 240, 248;
@@ -48,8 +49,11 @@
   --soft-white: 248, 249, 250;
   --off-white: 241, 250, 238;
   --dark-gray: 51, 51, 51;
-  --red-not-format: 255, 0, 0;
-  /* Finish Palette Color */
+  --red-not-format: 255, 0, 0;*/
+
+/* Finish Palette Color */
+
+:root {
   --soft-white: 248, 249, 250;
   --light-beige: 214, 201, 183;
   --light-gray: 178, 178, 177;
@@ -64,6 +68,19 @@
   --plant-green: 80, 200, 120;
 }
 
+:root {
+  --medium-aquamarine: 79, 182, 153;
+  --deep-space-sparkle: 64, 95, 115;
+  --indian-red: 183, 101, 80;
+  --isabelline: 243, 239, 236;
+  --charcoal: 54, 68, 79;
+  --illuminating-emerald: 57, 153, 126;
+  --middle-blue-green: 138, 228, 202;
+  --white: 255, 255, 255;
+  --old-gold: 209, 192, 76;
+  --slate-gray: 102, 121, 136;
+}
+
 /* Vanilla Elements */
 body {
   font-family: "Playfair Display", "Lato", sans-serif;
@@ -73,7 +90,7 @@ body {
 }
 
 div {
-  display: inherit;
+  display: static;
   unicode-bidi: inherit;
 }
 
@@ -93,7 +110,7 @@ h1 {
 h2 {
   font-family: "Lato";
   font-weight: 900;
-  font-size: xx-large;
+  font-size: x-large;
   font-style: italic;
 }
 
@@ -102,39 +119,6 @@ h2 {
 /* CLASSES */
 
 /* Text Colors */
-.text-ocean-blue {
-  color: rgba(var(--ocean-blue));
-}
-.text-light-ocean-blue {
-  color: rgba(var(--light-ocean-blue));
-}
-.text-sandy-beige {
-  color: rgba(var(--sandy-beige));
-}
-.text-light-sandy-beige {
-  color: rgba(var(--light-sandy-beige));
-}
-.text-coral-pink {
-  color: rgba(var(--coral-pink));
-}
-.text-light-coral-pink {
-  color: rgba(var(--light-coral-pink));
-}
-.text-seafoam-green {
-  color: rgba(var(--seafoam-green));
-}
-.text-light-seafoam-green {
-  color: rgba(var(--light-seafoam-green));
-}
-.text-soft-white {
-  color: rgba(var(--soft-white));
-}
-.text-off-white {
-  color: rgba(var(--off-white));
-}
-.text-dark-gray {
-  color: rgba(var(--dark-gray));
-}
 
 /* Font Styles */
 .font-light {

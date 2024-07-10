@@ -14,12 +14,38 @@
   --plant-green: 80, 200, 120;
 }
 
+:root {
+  --medium-aquamarine: 79, 182, 153;
+  --deep-space-sparkle: 64, 95, 115;
+  --indian-red: 183, 101, 80;
+  --isabelline: 243, 239, 236;
+  --charcoal: 54, 68, 79;
+  --illuminating-emerald: 57, 153, 126;
+  --middle-blue-green: 138, 228, 202;
+  --white: 255, 255, 255;
+  --old-gold: 209, 192, 76;
+  --slate-gray: 102, 121, 136;
+  /* PASTEL VARIATION */
+  --pastel-medium-aquamarine: #aed9cc;
+  --pastel-deep-space-sparkle: #a0bbc8;
+  --pastel-indian-red: #d4a59a;
+  --pastel-isabelline: #faf8f7;
+  --pastel-charcoal: #a6b1b8;
+  --pastel-illuminating-emerald: #9fcfc0;
+  --pastel-middle-blue-green: #c3eee3;
+  --white: #ffffff;
+  --pastel-old-gold: #ebe4a2;
+  --pastel-slate-gray: #bac5ce;
+}
+
 /* Custom ID Styles */
 #site_header {
-  background-color: rgba(var(--dark-gray));
+  background: rgba(var(--light-beige));
+
+  /*rgba(var(--charcoal));*/
   padding-bottom: 0;
   margin: 0;
-  position: static;
+  position: relative;
   width: 100%;
   top: 0;
   left: 0;
@@ -27,7 +53,7 @@
 }
 
 #global_nav {
-  padding: 0 10px;
+  padding: 0 50px;
   margin: 0 15px;
 }
 #global_nav_content {
@@ -57,7 +83,7 @@
 
 .global_nav_logo {
   font-size: 30px;
-  color: rgba(var(--soft-white));
+  color: rgba(var(--charcoal));
   font-weight: 300;
   font-style: italic;
   font-family: "Lato", serif;
@@ -65,18 +91,18 @@
 }
 
 .global_nav_logo:hover {
-  color: rgba(var(--light-seafoam-green), 0.8);
+  color: rgba(var(--indian-red), 0.8);
 }
 
 .global_nav_item {
   font-size: large;
   padding: 5px;
-  color: rgba(var(--soft-white));
-  font-weight: 300;
+  color: rgba(var(--charcoal));
+  font-weight: 500;
   font-style: italic;
-  font-family: "Lato", serif;
+  font-family: "Lato";
   text-decoration: none;
 }
 .global_nav_item:hover {
-  color: rgba(var(--light-seafoam-green), 0.8);
+  color: rgba(var(--indian-red), 0.8);
 }
