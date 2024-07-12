@@ -60,17 +60,121 @@
   background-color: rgba(var(--black), 0.5);
 }
 #site_main_content {
+  box-sizing: border-box;
   position: relative;
   width: 100%;
-  height: 50px;
-  background-color: blue;
+  height: auto;
 }
 #site_footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   height: 50px;
   background-color: green;
+}
+
+/* === MAIN WEBSITE SECTIONS === */
+.section {
+  padding: 3%;
+}
+#discover_section {
+  width: 100%;
+  box-sizing: border-box;
+}
+#discover_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*border: 2px solid rgba(var(--dark-deep-sky-blue));*/
+  border-radius: 12px;
+  text-shadow: 3px 4px 7px rgba(var(--black), 0.3);
+}
+#discover_box h1 {
+  margin: 0;
+  padding: 1.5%;
+  font-size: 300%;
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(var(--soft-white));
+}
+#discover_box h1 span {
+  color: rgba(var(--dark-deep-sky-blue));
+}
+#discover_box p {
+  margin: 0;
+  padding: 1%;
+  font-size: medium;
+  font-family: "Lato";
+  font-weight: 400;
+  letter-spacing: 0;
+  color: rgba(var(--soft-white));
+}
+#discover_box a {
+  margin: 1.5%;
+  padding: 1%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    45deg,
+    rgba(var(--light-black)) 50%,
+    rgba(var(--deep-sky-blue)) 50%
+  );
+  background-size: 270%;
+  background-repeat: repeat;
+  background-position: top right;
+  animation: button-animation 0.7s 0.15s ease-out forwards;
+  box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.15);
+  font-family: "Roboto";
+}
+
+#discover_box a:hover span {
+  animation: button-animation-rev 0.3s ease-out forwards;
+}
+
+#discover_box a:hover {
+  animation: button-animation-rev 0.5s ease-out forwards;
+  box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+
+.gradient_botton_text {
+  background-image: linear-gradient(
+    45deg,
+    rgba(var(--dark-deep-sky-blue)) 50%,
+    rgba(var(--soft-white)) 50%
+  );
+  background-size: 270%;
+  background-repeat: repeat;
+  background-position: top right;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  animation: button-animation 0.2s 0.15s ease-out forwards;
+}
+/* === Discover Box animations === */
+@keyframes button-animation-rev {
+  0% {
+    background-position: top right;
+  }
+  100% {
+    background-position: top left;
+  }
+}
+
+@keyframes button-animation {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
 }
 
 /* === PROJECT ANNOUNCEMENT === */
@@ -90,8 +194,9 @@
 }
 #top_announcement p {
   margin: 0;
-  font-family: "Roboto";
-  font-weight: 500;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 200;
   font-style: italic;
   color: rgba(var(--soft-white));
 }

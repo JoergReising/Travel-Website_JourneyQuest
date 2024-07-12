@@ -19,10 +19,13 @@
 
 #site_color_palette {
   position: relative;
-  margin: 5px;
+  margin: 5px auto;
   height: auto;
   width: auto;
   text-align: center;
+  background-color: violet;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 #site_color_palette p {

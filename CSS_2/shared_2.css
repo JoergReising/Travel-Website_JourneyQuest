@@ -1,21 +1,29 @@
 /* FONTS CONFIG
 
 Roboto Font.
-    font-family: "Roboto";
-    font-weight: 100-300-400-500-700-900;
-    font-style: Normal-Italic;
-
+  font-family: "Roboto";
+  font-weight: 100-300-400-500-700-900;
+  font-style: normal, italic;
 
 Josefin Sans.
-    font-family: "Josefin Sans";
-    font-weight: 100-700;
-    font-style: Normal-Italic;
+  font-family: "Josefin Sans";
+  font-weight: 100-700;
+  font-style: normal, italic;
 
 Marcellus.
   font-family: "Marcellus";
   font-weight: 400;
   font-style: normal;
 
+Montserrat
+  font-family: "Montserrat";
+  font-weight: 100->900;
+  font-style: normal, italic;
+
+Lato
+  font-family: "Lato";
+  font-weight: 100-300-400-700-900;
+  font-style: normal, italic;
 */
 
 /* ROOT COLORS */
