@@ -40,8 +40,7 @@
 
 /* Custom ID Styles */
 #site_header {
-  background: rgba(var(--light-beige));
-
+  background: rgba(var(--black), 0.5);
   /*rgba(var(--charcoal));*/
   padding-bottom: 0;
   margin: 0;
@@ -50,6 +49,8 @@
   top: 0;
   left: 0;
   box-sizing: border-box;
+  border-bottom: 2px solid rgba(var(--medium-gray), 0.8);
+  z-index: 1;
 }
 
 #global_nav {
@@ -83,7 +84,7 @@
 
 .global_nav_logo {
   font-size: 30px;
-  color: rgba(var(--charcoal));
+  color: rgba(var(--isabelline));
   font-weight: 300;
   font-style: italic;
   font-family: "Lato", serif;
@@ -91,18 +92,18 @@
 }
 
 .global_nav_logo:hover {
-  color: rgba(var(--indian-red), 0.8);
+  color: rgba(var(--illuminating-emerald), 0.8);
 }
 
 .global_nav_item {
   font-size: large;
   padding: 5px;
-  color: rgba(var(--charcoal));
+  color: rgba(var(--isabelline));
   font-weight: 500;
   font-style: italic;
   font-family: "Lato";
   text-decoration: none;
 }
 .global_nav_item:hover {
-  color: rgba(var(--indian-red), 0.8);
+  color: rgba(var(--illuminating-emerald), 0.8);
 }

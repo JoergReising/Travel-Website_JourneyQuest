@@ -35,24 +35,6 @@
 ---
 */
 
-/* Color Palette 
-
-:root {
-  --ocean-blue: 0, 119, 182;
-  --light-ocean-blue: 202, 240, 248;
-  --sandy-beige: 244, 162, 97;
-  --light-sandy-beige: 255, 229, 217;
-  --coral-pink: 231, 111, 81;
-  --light-coral-pink: 255, 179, 177;
-  --seafoam-green: 42, 157, 143;
-  --light-seafoam-green: 168, 218, 220;
-  --soft-white: 248, 249, 250;
-  --off-white: 241, 250, 238;
-  --dark-gray: 51, 51, 51;
-  --red-not-format: 255, 0, 0;*/
-
-/* Finish Palette Color */
-
 :root {
   --soft-white: 248, 249, 250;
   --light-beige: 214, 201, 183;
@@ -66,9 +48,7 @@
   --burnt-orange: 252, 159, 41;
   --dark-brown: 123, 76, 52;
   --plant-green: 80, 200, 120;
-}
-
-:root {
+  /* New Palette*/
   --medium-aquamarine: 79, 182, 153;
   --deep-space-sparkle: 64, 95, 115;
   --indian-red: 183, 101, 80;
@@ -79,19 +59,24 @@
   --white: 255, 255, 255;
   --old-gold: 209, 192, 76;
   --slate-gray: 102, 121, 136;
+  --deep-sky-blue: 0, 175, 255;
+  /* PASTEL VARIATION */
+  --pastel-medium-aquamarine: 174, 217, 204;
+  --pastel-deep-space-sparkle: 160, 187, 200;
+  --pastel-indian-red: 212, 165, 154;
+  --pastel-isabelline: 250, 248, 247;
+  --pastel-charcoal: 166, 177, 184;
+  --pastel-illuminating-emerald: 159, 207, 192;
+  --pastel-middle-blue-green: 195, 238, 227;
+  --pastel-old-gold: 235, 228, 162;
+  --pastel-slate-gray: 186, 197, 206;
 }
 
 /* Vanilla Elements */
 body {
   font-family: "Playfair Display", "Lato", sans-serif;
-  margin: 0;
-  background-color: rgba(var(--light-beige));
-  margin: 0;
-}
-
-div {
-  display: static;
-  unicode-bidi: inherit;
+  margin: 0px;
+  color: black;
 }
 
 a {
@@ -114,6 +99,25 @@ h2 {
   font-style: italic;
 }
 
+#background_blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(/Assets/index/images/discover-section/pexels-vladimir-miranda-238542436-19226163.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+#background_blur::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(var(--black), 0.8);
+  filter: blur(5px);
+  position: absolute;
+}
 /* Custom ID Styles */
 
 /* CLASSES */

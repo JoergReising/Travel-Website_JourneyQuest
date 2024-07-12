@@ -17,14 +17,16 @@
 :root {
   --medium-aquamarine: 79, 182, 153;
   --deep-space-sparkle: 64, 95, 115;
-  --indian-red: 183, 101, 80; /* USED*/
+  --indian-red: 183, 101, 80;
   --isabelline: 243, 239, 236;
   --charcoal: 54, 68, 79; /* USED*/
-  --illuminating-emerald: 57, 153, 126;
+  --illuminating-emerald: 57, 153, 126; /* USED*/
   --middle-blue-green: 138, 228, 202;
   --white: 255, 255, 255;
   --old-gold: 209, 192, 76; /* USED*/
   --slate-gray: 102, 121, 136;
+  --deep-sky-blue: 0, 175, 255;
+  --black: 0, 0, 0;
   /* PASTEL VARIATION */
   --pastel-medium-aquamarine: 174, 217, 204;
   --pastel-deep-space-sparkle: 160, 187, 200;
@@ -61,46 +63,6 @@
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-}
-
-#palette_1_no-1 {
-  background: rgba(var(--medium-aquamarine));
-}
-
-#palette_1_no-2 {
-  background: rgba(var(--deep-space-sparkle));
-}
-
-#palette_1_no-3 {
-  background: rgba(var(--indian-red));
-}
-
-#palette_1_no-4 {
-  background: rgba(var(--isabelline));
-}
-
-#palette_1_no-5 {
-  background: rgba(var(--charcoal));
-}
-
-#palette_1_no-6 {
-  background: rgba(var(--illuminating-emerald));
-}
-
-#palette_1_no-7 {
-  background: rgba(var(--middle-blue-green));
-}
-
-#palette_1_no-8 {
-  background: rgba(var(--white));
-}
-
-#palette_1_no-9 {
-  background: rgba(var(--old-gold));
-}
-
-#palette_1_no-10 {
-  background: rgba(var(--slate-gray));
 }
 
 /* Palette 2 */
