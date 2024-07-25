@@ -17,60 +17,8 @@
   --old-gold: 209, 192, 76;
   --charcoal-blue: 21, 24, 50;
   --charcoal: 54, 68, 79;
-}
-
-/* === WEBSITE LAYOUT === */
-#site_container {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  background-color: rgba(var(--light-black), 1);
-}
-#site_background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-#site_background_image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(/Assets/index/images/highlights-section/hawaii.jpg);
-  background-size: cover;
-  background-position: center;
-  filter: blur(3px);
-}
-#site_background_blackscreen {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(var(--black), 0.5);
-}
-#site_header {
-  padding: 5px;
-  position: relative;
-  height: auto;
-  width: auto;
-  background-color: rgba(var(--black), 0.5);
-}
-#site_main_content {
-  box-sizing: border-box;
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-#site_footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  background-color: green;
+  --light-beige: 214, 207, 197;
+  --gold: 255, 215, 0;
 }
 
 /* === MAIN WEBSITE SECTIONS === */
@@ -97,7 +45,7 @@
   padding: 1.5%;
 }
 #discover_box h1 span {
-  color: rgba(var(--dark-deep-sky-blue));
+  color: rgba(var(--deep-sky-blue));
 }
 #discover_box p {
   margin: 0;
@@ -107,7 +55,7 @@
   font-weight: 400;
   letter-spacing: 0;
   text-align: center;
-  color: rgba(var(--soft-white));
+  color: rgba(var(--light-beige));
 }
 #discover_box a {
   margin: 1.5%;
@@ -137,10 +85,10 @@
   box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.15);
   transition: 0.5s;
 }
-.discover_box_text {
+.discover_box_button {
   background-image: linear-gradient(
     45deg,
-    rgba(var(--dark-deep-sky-blue)) 50%,
+    rgba(var(--deep-sky-blue)) 50%,
     rgba(var(--soft-white)) 50%
   );
   background-size: 270%;
@@ -191,21 +139,28 @@
 }
 #destinations_container h2 {
   margin: 0;
-  padding: 2% 5% 2%;
+  padding: 4% 5% 2%;
 }
 
 #destinations_container p {
-  margin: 0;
-  padding: 2% 5% 2%;
+  padding: 0% 5% 2%;
 }
-#destinations_container p span {
+
+#destinations_container .destination_name {
+  margin: 0;
+  padding: 5% 5% 8%;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  color: rgba(var(--charcoal));
+}
+#destinations_container .destination_name span {
   margin: 0;
   font-size: 110%;
-  font-family: "Lato";
+  font-family: "Roboto";
   font-weight: 400;
   letter-spacing: -1px;
   text-align: center;
-  color: rgba(var(--deep-sky-blue));
+  color: rgba(var(--light-seafoam-green));
 }
 #destinations_content {
   padding: 0;
@@ -226,6 +181,7 @@
   border-radius: 15px;
   box-shadow: 2px 4px 8px rgba(var(--dark-gray), 0.6);
   object-fit: cover;
+  margin: 5% 5%;
 }
 .destination p {
   text-align: center;
@@ -235,29 +191,4 @@
 }
 .destination strong {
   color: rgba(var(--light-seafoam-green));
-}
-
-/* === PROJECT ANNOUNCEMENT === */
-#top_announcement {
-  width: auto;
-  margin: 5px;
-  height: 30px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(
-    45deg,
-    rgba(var(--dark-deep-sky-blue)),
-    rgba(var(--charcoal-blue))
-  );
-  border-radius: 8px;
-}
-#top_announcement p {
-  margin: 0;
-  font-family: "Montserrat";
-  text-transform: uppercase;
-  font-weight: 200;
-  font-style: italic;
-  color: rgba(var(--soft-white));
 }

@@ -1,187 +1,199 @@
-/*Quick Class Index (Text Font & Color)
----
-# Font Names
-  .playfair 
-  .lato
-  .montserrat
+/* FONTS CONFIG
 
-# Font Styles
-  .font-light
-  .font-regular
-  .font-bold
-  .font-black
-  .italic
-  .italic-regular
-  .italic-bold
+Roboto Font.
+  font-family: "Roboto";
+  font-weight: 100-300-400-500-700-900;
+  font-style: normal, italic;
 
-# Font Specials 
-  .lato-thin 
-  .lato-thin-italic 
-  .lato-light
-  .lato-light-italic 
----
-# Text Colors
-  .text-ocean-blue
-  .text-light-ocean-blue 
-  .text-sandy-beige
-  .text-light-sandy-beige 
-  .text-coral-pink 
-  .text-light-coral-pink 
-  .text-seafoam-green 
-  .text-light-seafoam-green 
-  .text-soft-white 
-  .text-off-white 
-  .text-dark-gray
----
+Josefin Sans.
+  font-family: "Josefin Sans";
+  font-weight: 100-700;
+  font-style: normal, italic;
+
+Marcellus.
+  font-family: "Marcellus";
+  font-weight: 400;
+  font-style: normal;
+
+Montserrat
+  font-family: "Montserrat";
+  font-weight: 100->900;
+  font-style: normal, italic;
+
+Lato
+  font-family: "Lato";
+  font-weight: 100-300-400-700-900;
+  font-style: normal, italic;
 */
 
+/* ROOT COLORS */
+
 :root {
-  --soft-white: 248, 249, 250;
-  --light-beige: 214, 201, 183;
-  --light-gray: 178, 178, 177;
-  --medium-gray: 93, 105, 105;
-  --dark-gray: 56, 56, 51;
-  --blue-gray: 98, 131, 158;
-  --muted-teal: 96, 149, 153;
+  /* grays palette*/
+  --soft-white: 249, 249, 249;
+  --light-gray: 190, 190, 178;
+  --medium-gray: 101, 101, 101;
+  --dark-gray: 54, 54, 54;
+  --darker-gray: 46, 46, 46;
+  --light-black: 34, 34, 34;
+  --black: 0, 0, 0;
+  /* Color palette */
   --light-seafoam-green: 168, 218, 220;
-  --gold: 255, 215, 0;
-  --burnt-orange: 252, 159, 41;
-  --dark-brown: 123, 76, 52;
-  --plant-green: 80, 200, 120;
-  /* New Palette*/
-  --medium-aquamarine: 79, 182, 153;
-  --deep-space-sparkle: 64, 95, 115;
-  --indian-red: 183, 101, 80;
-  --isabelline: 243, 239, 236;
-  --charcoal: 54, 68, 79;
-  --illuminating-emerald: 57, 153, 126;
-  --middle-blue-green: 138, 228, 202;
-  --white: 255, 255, 255;
-  --old-gold: 209, 192, 76;
-  --slate-gray: 102, 121, 136;
   --deep-sky-blue: 0, 175, 255;
-  /* PASTEL VARIATION */
-  --pastel-medium-aquamarine: 174, 217, 204;
-  --pastel-deep-space-sparkle: 160, 187, 200;
-  --pastel-indian-red: 212, 165, 154;
-  --pastel-isabelline: 250, 248, 247;
-  --pastel-charcoal: 166, 177, 184;
-  --pastel-illuminating-emerald: 159, 207, 192;
-  --pastel-middle-blue-green: 195, 238, 227;
-  --pastel-old-gold: 235, 228, 162;
-  --pastel-slate-gray: 186, 197, 206;
+  --dark-deep-sky-blue: 0, 140, 204;
+  --light-deep-sky-blue: 0, 191, 255;
+  --slate-blue: 83, 133, 141;
+  --illuminating-emerald: 57, 153, 126;
+  --old-gold: 209, 192, 76;
+  --charcoal-blue: 21, 24, 50;
+  --charcoal: 54, 68, 79;
+  --light-beige: 214, 207, 197;
 }
 
-/* Vanilla Elements */
-body {
-  font-family: "Playfair Display", "Lato", sans-serif;
-  margin: 0px;
-  color: black;
+/* === WEBSITE LAYOUT === */
+#site_container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgba(var(--light-black), 1);
 }
+#site_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#site_background_image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/Assets/index/images/highlights-section/hawaii.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+}
+#site_background_blackscreen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--black), 0.5);
+}
+#site_header {
+  padding: 5px;
+  position: relative;
+  height: auto;
+  width: auto;
+  background-color: rgba(var(--black), 0.5);
+}
+#site_main_content {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+#site_footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* === GLOBAL STYLES === */
 
 a {
-  color: inherit;
   text-decoration: none;
-  cursor: pointer;
+  color: rgb(21, 255, 0);
 }
 
-h1 {
-  font-family: "Lato";
-  font-weight: 900;
-  font-size: xx-large;
-  font-style: italic;
+p {
+  color: rgb(21, 255, 0);
 }
 
-h2 {
-  font-family: "Lato";
-  font-weight: 900;
-  font-size: x-large;
-  font-style: italic;
-}
-
-#background_blur {
-  position: absolute;
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Roboto" "Josefin Sans" "Marcellus";
   width: 100%;
   height: 100%;
-  background-image: url(/Assets/index/images/discover-section/pexels-vladimir-miranda-238542436-19226163.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -2;
+  background: rgba(var(--light-black));
 }
 
-#background_blur::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: rgba(var(--black), 0.8);
-  filter: blur(5px);
-  position: absolute;
+div {
 }
-/* Custom ID Styles */
-
-/* CLASSES */
-
-/* Text Colors */
-
-/* Font Styles */
-.font-light {
-  font-weight: 300;
+/* === SHARED HEADINGS */
+.heading-01 {
+  font-size: 250%;
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(var(--light-beige));
 }
-.font-regular {
+
+.heading-01 p {
+  font-size: 250%;
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(var(--light-beige));
+}
+
+.heading-02 {
+  font-size: 220%;
+  font-family: "Josefin Sans";
   font-weight: 400;
+  letter-spacing: -1px;
+  text-align: center;
+  color: rgba(var(--light-beige));
 }
-.font-bold {
-  font-weight: 700;
-}
-.font-black {
-  font-weight: 900;
-}
-.italic {
-  font-style: italic;
-}
-.italic-regular {
-  font-style: italic;
+.heading-03 {
+  font-size: 180%;
+  font-family: "Josefin Sans";
   font-weight: 400;
+  letter-spacing: -1px;
+  text-align: center;
+  color: rgba(var(--soft-white));
 }
-.italic-bold {
-  font-style: italic;
-  font-weight: 700;
-}
-
-/* Fonts*/
-/* Montserrat Font */
-.montserrat {
-  font-family: "Montserrat";
-}
-
-/* Playfair Font*/
-.playfair {
-  font-family: "Playfair Display", serif;
-}
-/* Lato Font*/
-.lato {
-  font-family: "Lato", serif;
-}
-
-/* Lato Font Specials */
-.lato-thin {
-  font-family: "Lato", serif;
-  font-weight: 100;
-  font-style: normal;
-}
-.lato-thin-italic {
-  font-family: "Lato", serif;
-  font-weight: 100;
-  font-style: italic;
-}
-.lato-light {
-  font-family: "Lato", serif;
+.heading-04 {
+  font-size: 150%;
+  font-family: "Josefin Sans";
   font-weight: 300;
-  font-style: normal;
+  letter-spacing: -1px;
+  text-align: center;
+  color: rgba(var(--soft-white));
 }
-.lato-light-italic {
-  font-family: "Lato", serif;
+.heading-05 {
+  font-size: 120%;
+  font-family: "Josefin Sans";
   font-weight: 300;
-  font-style: italic;
+  letter-spacing: -1px;
+  text-align: center;
+  color: rgba(var(--soft-white));
+}
+
+.heading-06 {
+  font-size: 100%;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  letter-spacing: -1px;
+  text-align: center;
+  color: rgba(var(--soft-white));
+}
+
+.paragraph {
+  font-size: medium;
+  font-family: "Lato";
+  font-weight: 300;
+  letter-spacing: 0;
+  text-align: center;
+  color: rgba(var(--light-beige));
 }

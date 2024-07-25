@@ -39,7 +39,7 @@
 
 /* === GLOBAL NAVBAR === */
 #global_navbar {
-  overflow: hidden;
+  overflow: visible;
   padding: 5px 5px;
   display: relative;
   margin: 0 8%;

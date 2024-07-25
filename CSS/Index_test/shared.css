@@ -1,0 +1,187 @@
+/*Quick Class Index (Text Font & Color)
+---
+# Font Names
+  .playfair 
+  .lato
+  .montserrat
+
+# Font Styles
+  .font-light
+  .font-regular
+  .font-bold
+  .font-black
+  .italic
+  .italic-regular
+  .italic-bold
+
+# Font Specials 
+  .lato-thin 
+  .lato-thin-italic 
+  .lato-light
+  .lato-light-italic 
+---
+# Text Colors
+  .text-ocean-blue
+  .text-light-ocean-blue 
+  .text-sandy-beige
+  .text-light-sandy-beige 
+  .text-coral-pink 
+  .text-light-coral-pink 
+  .text-seafoam-green 
+  .text-light-seafoam-green 
+  .text-soft-white 
+  .text-off-white 
+  .text-dark-gray
+---
+*/
+
+:root {
+  --soft-white: 248, 249, 250;
+  --light-beige: 214, 201, 183;
+  --light-gray: 178, 178, 177;
+  --medium-gray: 93, 105, 105;
+  --dark-gray: 56, 56, 51;
+  --blue-gray: 98, 131, 158;
+  --muted-teal: 96, 149, 153;
+  --light-seafoam-green: 168, 218, 220;
+  --gold: 255, 215, 0;
+  --burnt-orange: 252, 159, 41;
+  --dark-brown: 123, 76, 52;
+  --plant-green: 80, 200, 120;
+  /* New Palette*/
+  --medium-aquamarine: 79, 182, 153;
+  --deep-space-sparkle: 64, 95, 115;
+  --indian-red: 183, 101, 80;
+  --isabelline: 243, 239, 236;
+  --charcoal: 54, 68, 79;
+  --illuminating-emerald: 57, 153, 126;
+  --middle-blue-green: 138, 228, 202;
+  --white: 255, 255, 255;
+  --old-gold: 209, 192, 76;
+  --slate-gray: 102, 121, 136;
+  --deep-sky-blue: 0, 175, 255;
+  /* PASTEL VARIATION */
+  --pastel-medium-aquamarine: 174, 217, 204;
+  --pastel-deep-space-sparkle: 160, 187, 200;
+  --pastel-indian-red: 212, 165, 154;
+  --pastel-isabelline: 250, 248, 247;
+  --pastel-charcoal: 166, 177, 184;
+  --pastel-illuminating-emerald: 159, 207, 192;
+  --pastel-middle-blue-green: 195, 238, 227;
+  --pastel-old-gold: 235, 228, 162;
+  --pastel-slate-gray: 186, 197, 206;
+}
+
+/* Vanilla Elements */
+body {
+  font-family: "Playfair Display", "Lato", sans-serif;
+  margin: 0px;
+  color: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: xx-large;
+  font-style: italic;
+}
+
+h2 {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: x-large;
+  font-style: italic;
+}
+
+#background_blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(/Assets/index/images/discover-section/pexels-vladimir-miranda-238542436-19226163.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+#background_blur::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(var(--black), 0.8);
+  filter: blur(5px);
+  position: absolute;
+}
+/* Custom ID Styles */
+
+/* CLASSES */
+
+/* Text Colors */
+
+/* Font Styles */
+.font-light {
+  font-weight: 300;
+}
+.font-regular {
+  font-weight: 400;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-black {
+  font-weight: 900;
+}
+.italic {
+  font-style: italic;
+}
+.italic-regular {
+  font-style: italic;
+  font-weight: 400;
+}
+.italic-bold {
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* Fonts*/
+/* Montserrat Font */
+.montserrat {
+  font-family: "Montserrat";
+}
+
+/* Playfair Font*/
+.playfair {
+  font-family: "Playfair Display", serif;
+}
+/* Lato Font*/
+.lato {
+  font-family: "Lato", serif;
+}
+
+/* Lato Font Specials */
+.lato-thin {
+  font-family: "Lato", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.lato-thin-italic {
+  font-family: "Lato", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+.lato-light {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.lato-light-italic {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: italic;
+}
