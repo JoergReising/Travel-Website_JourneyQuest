@@ -131,7 +131,7 @@
     rgba(var(--charcoal-blue)),
     rgba(var(--dark-deep-sky-blue))
   );
-  text-shadow: 3px 4px 7px rgba(var(--black), 0.3);
+  text-shadow: 3px 4px 7px rgba(var(--black), 0.8);
 }
 #destinations_container h1 {
   margin: 0;
@@ -151,7 +151,7 @@
   padding: 5% 5% 8%;
   font-family: "Roboto", serif;
   font-weight: 400;
-  color: rgba(var(--charcoal));
+  color: rgba(var(--light-seafoam-green));
 }
 #destinations_container .destination_name span {
   margin: 0;
@@ -160,7 +160,7 @@
   font-weight: 400;
   letter-spacing: -1px;
   text-align: center;
-  color: rgba(var(--light-seafoam-green));
+  color: rgba(var(--so));
 }
 #destinations_content {
   padding: 0;
