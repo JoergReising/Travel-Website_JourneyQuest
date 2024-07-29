@@ -1,12 +1,14 @@
 :root {
   /* grays palette*/
-  --soft-white: 249, 249, 249;
-  --light-gray: 178, 178, 178;
-  --medium-gray: 101, 101, 101;
-  --dark-gray: 54, 54, 54;
-  --darker-gray: 46, 46, 46;
-  --light-black: 34, 34, 34;
-  --black: 0, 0, 0;
+  --gray-color-100: 249, 249, 249;
+  --gray-color-200: 221, 221, 221;
+  --gray-color-300: 193, 193, 193;
+  --gray-color-400: 165, 165, 165;
+  --gray-color-500: 137, 137, 137;
+  --gray-color-600: 109, 109, 109;
+  --gray-color-700: 81, 81, 81;
+  --gray-color-800: 53, 53, 53;
+  --gray-color-900: 34, 34, 34;
   /* Color palette */
   --light-seafoam-green: 168, 218, 220;
   --deep-sky-blue: 0, 175, 255;
@@ -54,31 +56,31 @@
 }
 
 #palette_1_no-1 {
-  background: rgba(var(--soft-white));
+  background: rgba(var(--gray-color-100));
 }
 
 #palette_1_no-2 {
-  background: rgba(var(--light-gray));
+  background: rgba(var(--gray-color-400));
 }
 
 #palette_1_no-3 {
-  background: rgba(var(--medium-gray));
+  background: rgba(var(--gray-color-500));
 }
 
 #palette_1_no-4 {
-  background: rgba(var(--dark-gray));
+  background: rgba(var(--gray-color-600));
 }
 
 #palette_1_no-5 {
-  background: rgba(var(--darker-gray));
+  background: rgba(var(--gray-color-700));
 }
 
 #palette_1_no-6 {
-  background: rgba(var(--light-black));
+  background: rgba(var(--gray-color-800));
 }
 
 #palette_1_no-7 {
-  background: rgba(var(--black));
+  background: rgba(var(--gray-color-900));
 }
 
 #palette_1_no-8 {

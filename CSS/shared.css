@@ -30,13 +30,15 @@ Lato
 
 :root {
   /* grays palette*/
-  --soft-white: 249, 249, 249;
-  --light-gray: 190, 190, 178;
-  --medium-gray: 101, 101, 101;
-  --dark-gray: 54, 54, 54;
-  --darker-gray: 46, 46, 46;
-  --light-black: 34, 34, 34;
-  --black: 0, 0, 0;
+  --gray-color-100: 249, 249, 249;
+  --gray-color-200: 221, 221, 221;
+  --gray-color-300: 193, 193, 193;
+  --gray-color-400: 165, 165, 165;
+  --gray-color-500: 137, 137, 137;
+  --gray-color-600: 109, 109, 109;
+  --gray-color-700: 81, 81, 81;
+  --gray-color-800: 53, 53, 53;
+  --gray-color-900: 34, 34, 34;
   /* Color palette */
   --light-seafoam-green: 168, 218, 220;
   --deep-sky-blue: 0, 175, 255;
@@ -50,45 +52,12 @@ Lato
   --light-beige: 214, 207, 197;
 }
 
-/* === WEBSITE LAYOUT === */
-#site_container {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  background-color: rgba(var(--light-black), 1);
-}
-#site_background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-#site_background_image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(/Assets/index/images/highlights-section/hawaii.jpg);
-  background-size: cover;
-  background-position: center;
-  filter: blur(3px);
-}
-#site_background_blackscreen {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(var(--black), 0.5);
-}
 #site_header {
   padding: 5px;
   position: relative;
   height: auto;
   width: auto;
-  background-color: rgba(var(--black), 0.5);
+  background-color: rgba(var(--gray-color-900), 0.5);
 }
 #site_main_content {
   box-sizing: border-box;
@@ -110,69 +79,6 @@ a {
   color: rgb(21, 255, 0);
 }
 
-h1 {
-  font-size: 250%;
-  font-family: "Josefin Sans";
-  font-weight: 600;
-  letter-spacing: -3px;
-  text-transform: uppercase;
-  text-align: center;
-  color: rgba(var(--light-beige));
-}
-
-h2 {
-  font-size: 220%;
-  font-family: "Josefin Sans";
-  font-weight: 400;
-  letter-spacing: -1px;
-  text-align: center;
-  color: rgba(var(--light-beige));
-}
-h3 {
-  font-size: 180%;
-  font-family: "Josefin Sans";
-  font-weight: 400;
-  letter-spacing: -1px;
-  text-align: center;
-  color: rgba(var(--soft-white));
-}
-
-h4 {
-  font-size: 150%;
-  font-family: "Josefin Sans";
-  font-weight: 300;
-  letter-spacing: -1px;
-  text-align: center;
-  color: rgba(var(--soft-white));
-}
-
-h5 {
-  font-size: 120%;
-  font-family: "Josefin Sans";
-  font-weight: 300;
-  letter-spacing: -1px;
-  text-align: center;
-  color: rgba(var(--soft-white));
-}
-
-h6 {
-  font-size: 100%;
-  font-family: "Josefin Sans";
-  font-weight: 300;
-  letter-spacing: -1px;
-  text-align: center;
-  color: rgba(var(--soft-white));
-}
-
-p {
-  font-size: 15px;
-  font-family: "Lato";
-  font-weight: 300;
-  letter-spacing: 0;
-  text-align: center;
-  color: rgba(var(--light-beige));
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -180,7 +86,7 @@ body {
   font-family: "Roboto" "Josefin Sans" "Marcellus";
   width: 100%;
   height: 100%;
-  background: rgba(var(--light-black));
+  background: rgba(var(--gray-color-900));
 }
 
 /* === HYPERLINK STYLE === */
@@ -220,4 +126,224 @@ body {
 }
 .link_animation:hover::after {
   transform: scaleX(1);
+}
+
+/*  FINAL CODE   */
+
+:root {
+  /* grays palette*/
+  --gray-color-100: 249, 249, 249;
+  --gray-color-200: 221, 221, 221;
+  --gray-color-300: 193, 193, 193;
+  --gray-color-400: 165, 165, 165;
+  --gray-color-500: 137, 137, 137;
+  --gray-color-600: 109, 109, 109;
+  --gray-color-700: 81, 81, 81;
+  --gray-color-800: 53, 53, 53;
+  --gray-color-900: 34, 34, 34;
+}
+
+/* Style Index 
+
+- 1.Josefin Sans
+
+*/
+
+/* === 1. TEXT STYLING === */
+/* === 1.1. Base font size for paragraphs === */
+p {
+  font-size: 1rem;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  letter-spacing: 0;
+  color: rgba(var(--gray-color-200));
+}
+
+/* 1.2 Headings */
+h1 {
+  font-size: 3rem;
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  color: rgba(var(--gray-color-200));
+}
+
+h2 {
+  font-size: 2.7rem;
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: rgba(var(--gray-color-300));
+}
+h3 {
+  font-size: 2.5rem;
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: rgba(var(--gray-color-400));
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: rgba(var(--gray-color-600));
+}
+
+h5 {
+  font-size: 1.15rem;
+  font-family: "Josefin Sans";
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: rgba(var(--gray-color-700));
+}
+
+h6 {
+  font-size: 1rem;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  letter-spacing: -1px;
+  color: rgba(var(--gray-color-800));
+}
+
+/* 1.3 Text formatting */
+strong {
+  /* Represents strong importance; typically renders as bold. */
+  font-weight: 700;
+}
+b {
+  /* Renders text in bold without implying any added importance. */
+  font-weight: 700;
+}
+em {
+  /* Represents emphasized text; typically renders as italic. */
+  font-style: italic;
+}
+i {
+  /* Renders text in italics without implying any added emphasis. */
+  font-style: italic;
+}
+mark {
+  /* Highlights text, typically with a yellow background. */
+  background-color: yellow;
+  padding: 0.1rem;
+}
+small {
+  /* Renders text in a smaller size. */
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+del {
+  /* Represents deleted text; typically renders with a strikethrough. */
+  text-decoration: line-through;
+}
+
+ins {
+  text-decoration: underline;
+}
+
+sub {
+  font-size: 0.75rem;
+  vertical-align: sub;
+}
+
+sup {
+  font-size: 0.75rem;
+  vertical-align: super;
+}
+
+/* 1.4 Additional text elements */
+abbr {
+  text-decoration: underline dotted;
+}
+
+address {
+  font-style: italic;
+}
+
+dfn {
+  font-style: italic;
+}
+
+time {
+  font-style: italic;
+}
+
+bdi {
+  direction: ltr; /* or 'rtl' depending on the context */
+}
+
+bdo {
+  direction: rtl; /* or 'ltr' depending on the context */
+}
+/* === 2. GLOBAL WEBSITE STRUCTURE === */
+/* === 2.1 GENERAL SITE CONTAINER === */
+#site_container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgba(var(--gray-color-700), 1);
+}
+/* === 2.2 GLOBAL BACKGROUND === */
+#site_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#site_background_image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/Assets/index/images/highlights-section/hawaii.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+}
+#site_background_blackscreen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--gray-color-900), 0.7);
+}
+
+/* Estructural Elements Classes */
+
+.website_section {
+  padding: 3% 33% 0%;
+}
+
+.content_container_blue {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: linear-gradient(
+    rgba(var(--charcoal-blue)),
+    rgba(var(--dark-deep-sky-blue))
+  );
+  text-shadow: 3px 4px 7px rgba(var(--gray-color-900), 1);
+}
+
+.content {
+  padding: 2rem;
+}
+
+.fake_content {
+  width: 100%;
+  height: 600px;
+}
+
+.visuallyhiding {
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
 }
