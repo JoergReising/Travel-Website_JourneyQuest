@@ -1,6 +1,6 @@
 #footer_container {
   margin: 0;
-  background-color: rgba(var(--dark-gray), 0.8);
+  background-color: rgba(var(--gray-color-900), 0.5);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
