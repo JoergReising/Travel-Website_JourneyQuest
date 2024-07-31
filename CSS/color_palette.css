@@ -42,10 +42,10 @@
   /* Box Model */
   box-sizing: border-box;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 30px;
 
   /* Appearance */
-  background-color: violet;
+  background-color: rgba(var(--gray-color-900), 0.5);
 }
 
 #site_color_palette p {

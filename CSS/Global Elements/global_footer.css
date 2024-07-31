@@ -1,5 +1,6 @@
 #footer_container {
   margin: 0;
+  padding: 0;
   background-color: rgba(var(--gray-color-900), 0.5);
   display: flex;
   justify-content: space-evenly;

@@ -53,7 +53,7 @@
 /* === MAIN LOGO === */
 #main_logo {
   margin: 0 1rem;
-  width: 11rem;
+  width: auto;
 }
 
 #main_logo a {
@@ -62,7 +62,7 @@
   align-items: center;
   justify-content: center;
   font-family: "Roboto";
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
   letter-spacing: -1px;
   color: rgba(var(--gray-color-200), 1);
@@ -79,11 +79,11 @@
 }
 
 /* === LINKS CONTAINER === */
-#links_container {
+#navbar_links {
   width: 50%;
 }
 
-#links_container ul {
+#navbar_links ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -92,10 +92,35 @@
   justify-content: space-evenly;
 }
 
-#links_container ul li {
+#navbar_links ul li {
   margin: 0 0.5rem;
   box-sizing: border-box;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  min-width: 0;
+  align-content: center;
+}
+
+/* === Options === */
+#navbar_options {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+#navbar_icons ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+#navbar_icons ul li {
+  margin: 0 0.5rem;
+  box-sizing: border-box;
+  font-size: 0.9rem;
   font-weight: 500;
   min-width: 0;
   align-content: center;
@@ -124,7 +149,7 @@
   padding: 0 0.5rem;
   box-sizing: border-box;
   justify-content: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 500;
   align-content: center;
 }
@@ -138,4 +163,20 @@
 .nav_bar_icon:hover {
   color: rgba(var(--primary-color-300));
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 15;
+}
+
+/* === Media Query === */
+
+@media (max-width: 48rem) {
+  #navbar_links {
+    display: none;
+  }
+
+  #login_menu {
+    display: none;
+  }
+
+  .display_none {
+    display: inline;
+  }
 }

@@ -5,40 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JourneyQuest</title>
 
-    <!-- FONTS API-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
-      rel="stylesheet"
-    />
-    <!-- CSS Style -->
-    <link rel="stylesheet" href="/CSS/shared.css" />
-    <link rel="stylesheet" href="/CSS/index_site.css" />
-    <link rel="stylesheet" href="/CSS/color_palette.css" />
-    <link rel="stylesheet" href="/CSS/Global Elements/top_announcement.css" />
-    <link rel="stylesheet" href="/CSS/Global Elements/global_navbar.css" />
-    <link rel="stylesheet" href="/CSS/Global Elements/global_footer.css" />
+     <!-- FONTS API-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+     <!-- ICONS -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <!-- CSS Style -->
+     <link rel="stylesheet" href="/CSS/shared.css" />
+     <link rel="stylesheet" href="/CSS/color_palette.css" />
+     <link rel="stylesheet" href="/CSS/index_site.css">
+     <link rel="stylesheet" href="/CSS/Global Elements/top_announcement.css" />
+     <link rel="stylesheet" href="/CSS/Global Elements/global_navbar.css" />
+     <link rel="stylesheet" href="/CSS/Global Elements/global_footer.css" />
   </head>
   <body>
     <div id="site_container">
@@ -61,22 +40,22 @@
               JourneyQuest
             </a>
           </div>
-          <div id="links_container">
+          <div id="navbar_links">
             <ul>
               <li>
-                <a
-                  class="hyperlink link_animation"
-                  href="/HTML/Index.html"
+                <a class="hyperlink link_animation" href="/HTML/Index.html"
                   >Home</a
                 >
               </li>
               <li>
                 <a class="hyperlink link_animation" href="/HTML/services.html"
-                  >Services</a
+                  >Blog</a
                 >
               </li>
               <li>
-                <a class="hyperlink link_animation" href="/HTML/destinations.html"
+                <a
+                  class="hyperlink link_animation"
+                  href="/HTML/destinations.html"
                   >Destinations</a
                 >
               </li>
@@ -87,34 +66,48 @@
               </li>
             </ul>
           </div>
-          <div id="login_menu">
-            <ul>
-              <li>
-                <a
-                  class="hyperlink link_animation"
-                  href="/HTML/destinations.html"
-                >
-                  <img
-                    src="/Assets/Icons/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"
-                    alt="Search_Icon"
-                  />
-                </a>
-              </li>
-              <li>
-                <a
-                  class="hyperlink_blue link_animation"
-                  href="/HTML/about.html"
-                  >Register</a
-                >
-              </li>
-              <li>
-                <a
-                  class="hyperlink_blue link_animation"
-                  href="/HTML/about.html"
-                  >Sign up</a
-                >
-              </li>
-            </ul>
+
+          <!--<div id="navbar_options">-->
+            <div id="login_menu">
+              <ul>
+                
+                <li class="login_menu_text">
+                  <a class="hyperlink_blue link_animation" href="/HTML/about.html"
+                    >Register</a
+                  >
+                </li>
+                <li class="login_menu_text">
+                  <a class="hyperlink_blue link_animation" href="/HTML/about.html"
+                    >Sign up</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="navbar_icons">
+              <ul>
+                <li>
+                  <a
+                    class="material-symbols-outlined nav_bar_icon link_animation"
+                    href="/HTML/destinations.html"
+                  >search 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="material-symbols-outlined nav_bar_icon link_animation"
+                    href="/HTML/destinations.html"
+                  >home 
+                  </a>
+                </li>
+                <li class="display_none" >
+                  <a
+                    class="material-symbols-outlined nav_bar_icon link_animation"
+                    href="/HTML/destinations.html"
+                  >menu
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -123,7 +116,7 @@
         <div class="section" id="discover_section">
           <div id="discover_box">
             <h1>
-              <span>JourneyQuest:</span><br />
+              <span>JourneyQuest:</span><br/>
               Your Passport to <br />
               the World's Wonders
             </h1>

@@ -9,16 +9,17 @@
   justify-content: center;
   background: linear-gradient(
     45deg,
-    rgba(var(--dark-deep-sky-blue)),
-    rgba(var(--charcoal-blue))
+    rgba(var(--primary-color-500)),
+    rgba(var(--primary-color-900))
   );
   border-radius: 8px;
 }
 #top_announcement p {
   margin: 0;
-  font-family: "Montserrat";
+  font-family: "Raleway";
+  font-size: 0.8rem;
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 300;
   font-style: italic;
-  color: rgba(var(--soft-white));
+  color: rgba(var(--gray-color-900));
 }
