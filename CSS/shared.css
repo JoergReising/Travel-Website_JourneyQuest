@@ -59,21 +59,21 @@ body {
 }
 
 /* === HYPERLINK STYLE === */
-.hyperlink {
-  font-family: "Roboto";
-  color: rgba(var(--light-gray));
+.hyperlink,
+.hyperlink_color {
+  font-family: "Raleway";
+  color: rgba(var(--gray-color-300));
   transition: 0.5s;
 }
+
 .hyperlink:hover {
-  color: rgba(var(--soft-white));
+  color: rgba(var(--gray-color-200));
+  font-weight: 600;
 }
-.hyperlink_blue {
-  font-family: "Roboto";
-  color: rgba(var(--light-gray));
-  transition: 0.5s;
-}
-.hyperlink_blue:hover {
-  color: rgba(var(--deep-sky-blue));
+
+.hyperlink_color:hover {
+  color: rgba(var(--secondary-color-500));
+  font-weight: 600;
 }
 
 /* === HYPERLINK ANIMATION === */
@@ -81,6 +81,7 @@ body {
   position: relative;
   width: fit-content;
 }
+
 .link_animation::after {
   content: "";
   position: absolute;
@@ -88,11 +89,12 @@ body {
   bottom: -2px;
   width: 100%;
   height: 2px;
-  background: rgba(var(--deep-sky-blue));
+  background: rgba(var(--secondary-color-500));
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.1s ease-in;
 }
+
 .link_animation:hover::after {
   transform: scaleX(1);
 }
@@ -110,16 +112,30 @@ body {
   --gray-color-700: 81, 81, 81;
   --gray-color-800: 53, 53, 53;
   --gray-color-900: 34, 34, 34;
-  /* === Primary Color Pallete === */
-  --primary-color-100: 102, 204, 255; /* Lightest */
-  --primary-color-200: 76, 191, 255;
-  --primary-color-300: 51, 179, 255;
-  --primary-color-400: 25, 166, 255;
-  --primary-color-500: 0, 153, 255; /* Base color */
-  --primary-color-600: 0, 140, 230;
-  --primary-color-700: 0, 127, 204;
-  --primary-color-800: 0, 114, 178;
-  --primary-color-900: 0, 102, 153; /* Darkest */
+  /* === Primary Color Palette === */
+  --primary-color-100: 0, 200, 200; /* lighter shade */
+  --primary-color-200: 0, 180, 180;
+  --primary-color-300: 0, 160, 160;
+  --primary-color-400: 0, 140, 140;
+  --primary-color-500: 0, 120, 120; /* base color */
+  --primary-color-600: 0, 100, 100;
+  --primary-color-700: 0, 80, 80;
+  --primary-color-800: 0, 60, 60;
+  --primary-color-900: 0, 40, 40;
+  /* === Secondary Color Palette ===*/
+  --secondary-color-100: 255, 233, 226; /* Lightest shade */
+  --secondary-color-200: 255, 210, 202;
+  --secondary-color-300: 255, 187, 178;
+  --secondary-color-400: 255, 164, 155;
+  --secondary-color-500: 248, 99, 70; /* Base color */
+  --secondary-color-600: 232, 89, 63;
+  --secondary-color-700: 216, 79, 56;
+  --secondary-color-800: 200, 69, 49;
+  --secondary-color-900: 184, 59, 42; /* Darkest shade */
+}
+
+#test {
+  color: rgb(219, 204, 156);
 }
 
 /* Style Index 
@@ -166,19 +182,19 @@ h4 {
   font-size: 1.8rem;
   font-family: "Roboto";
   font-weight: 600;
-  color: rgba(var(--gray-color-600));
+  color: rgba(var(--gray-color-400));
 }
 h5 {
   font-size: 1.15rem;
   font-family: "Roboto";
   font-weight: 500;
-  color: rgba(var(--gray-color-700));
+  color: rgba(var(--gray-color-400));
 }
 h6 {
   font-size: 1rem;
   font-family: "Roboto";
   font-weight: 400;
-  color: rgba(var(--gray-color-800));
+  color: rgba(var(--gray-color-400));
 }
 /* 1.3 Text formatting */
 strong {
@@ -265,24 +281,28 @@ bdo {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/Assets/index/images/highlights-section/hawaii.jpg);
+  background-image: url(/Assets/fotos/pexels-ollivves-931018.jpg);
   background-size: cover;
   background-position: center;
-  filter: blur(3px);
+  filter: blur(1px);
 }
 #site_background_blackscreen {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(var(--gray-color-900), 0.7);
+  background: radial-gradient(
+    circle at bottom,
+    rgba(var(--primary-color-700), 1),
+    rgba(var(--primary-color-500), 0.2)
+  );
 }
-/* ===  ===*/
+/* === WEBPAGE SECTIONS ===*/
 #site_header {
   padding: 5px;
   position: relative;
   height: auto;
   width: auto;
-  background: rgba(var(--gray-color-900), 0.5);
+  background: rgba(var(--gray-color-900), 0.6);
 }
 #site_main_content {
   box-sizing: border-box;
@@ -304,17 +324,18 @@ bdo {
 /* Estructural Elements Classes */
 
 .website_section {
-  padding: 3% 8rem 0%;
+  padding: 3% 20% 0%;
 }
-.content_container_blue {
+.content_container_color {
   width: 100%;
   box-sizing: border-box;
   border-radius: 30px;
   background: linear-gradient(
-    rgba(var(--charcoal-blue)),
+    rgba(var(--primary-color-900)),
     rgba(var(--primary-color-500))
   );
   text-shadow: 3px 4px 7px rgba(var(--gray-color-900), 1);
+  box-shadow: 7px 7px 10px rgba(var(--gray-color-900), 0.5);
 }
 .content {
   padding: 2rem;

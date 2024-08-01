@@ -1,44 +1,3 @@
-/* === HYPERLINK STYLE === */
-.hyperlink,
-.hyperlink_blue {
-  font-family: "Raleway";
-  color: rgba(var(--gray-color-400));
-  transition: 0.5s;
-}
-
-.hyperlink:hover {
-  color: rgba(var(--gray-color-200));
-  font-weight: 600;
-}
-
-.hyperlink_blue:hover {
-  color: rgba(var(--primary-color-300));
-  font-weight: 600;
-}
-
-/* === HYPERLINK ANIMATION === */
-.link_animation {
-  position: relative;
-  width: fit-content;
-}
-
-.link_animation::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 2px;
-  background: rgba(var(--primary-color-300));
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.1s ease-in;
-}
-
-.link_animation:hover::after {
-  transform: scaleX(1);
-}
-
 /* === GLOBAL NAVBAR === */
 #global_navbar {
   display: flex;
@@ -70,12 +29,14 @@
 }
 
 #main_logo a:hover {
-  color: rgba(var(--primary-color-400));
+  color: rgba(var(--primary-color-300));
   font-weight: 700;
 }
 
-#main_logo a img {
-  width: 1.7rem;
+#main_logo a i {
+  font-size: 2.1rem;
+  color: rgba(var(--primary-color-300));
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 15;
 }
 
 /* === LINKS CONTAINER === */
@@ -161,8 +122,8 @@
 }
 
 .nav_bar_icon:hover {
-  color: rgba(var(--primary-color-300));
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 15;
+  color: rgba(var(--gray-color-200));
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 15;
 }
 
 /* === Media Query === */

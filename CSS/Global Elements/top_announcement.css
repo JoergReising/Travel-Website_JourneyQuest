@@ -10,7 +10,7 @@
   background: linear-gradient(
     45deg,
     rgba(var(--primary-color-500)),
-    rgba(var(--primary-color-900))
+    rgba(var(--primary-color-700))
   );
   border-radius: 8px;
 }
@@ -19,7 +19,7 @@
   font-family: "Raleway";
   font-size: 0.8rem;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 500;
   font-style: italic;
-  color: rgba(var(--gray-color-900));
+  color: rgba(var(--gray-color-300));
 }
