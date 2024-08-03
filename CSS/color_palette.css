@@ -1,29 +1,13 @@
-#site_color_palette {
-  /* Layout */
+#container_palettes {
+  margin: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
   align-items: center;
-  position: relative;
-  margin: 5px auto;
-  height: auto;
-  width: auto;
-
-  /* Box Model */
-  box-sizing: border-box;
-  padding: 10px;
-  border-radius: 30px;
-
-  /* Appearance */
-  background-color: rgba(var(--gray-color-900), 0.5);
 }
 
-#site_color_palette p {
-  padding: 5px;
-  text-align: center;
-}
-
-#color_palette_content_grays {
+#color_palette {
   display: flex;
   flex: row;
   justify-content: center;
@@ -34,12 +18,6 @@
 .color_sample {
   width: 100%;
   height: 3rem;
-}
-
-#color_palette_content {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
 }
 
 #gray-color-100 {

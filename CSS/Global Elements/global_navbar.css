@@ -131,7 +131,7 @@
 
 @media (max-width: 48rem) {
   #main_logo a {
-    color: rgba(var(--secondary-color-500), 1);
+    color: rgba(var(--gray-color-200), 1);
   }
 
   #navbar_links {

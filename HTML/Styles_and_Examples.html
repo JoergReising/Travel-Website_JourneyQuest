@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JourneyQuest</title>
 
-    <!-- FONTS API-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- ICONS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
     <!-- CSS Style -->
-    <link rel="stylesheet" href="/CSS/shared.css" />
+    <link rel="stylesheet" href="/CSS/Global Elements/shared.css" />
     <link rel="stylesheet" href="/CSS/color_palette.css" />
     <link rel="stylesheet" href="/CSS/Global Elements/top_announcement.css" />
     <link rel="stylesheet" href="/CSS/Global Elements/global_navbar.css" />
@@ -24,17 +32,20 @@
         <div id="site_background_image"></div>
         <div id="site_background_blackscreen"></div>
       </div>
+
       <div id="site_header">
         <div id="top_announcement">
           <p>This is an example project, not a real website.</p>
         </div>
+
         <div id="global_navbar">
           <div id="main_logo">
-            <a class="hyperlink link_animation" href="Index_2.html">
+            <a href="/HTML/Index.html">
               <i class="material-symbols-outlined">travel</i>
               JourneyQuest
             </a>
           </div>
+
           <div id="navbar_links">
             <ul>
               <li>
@@ -61,121 +72,154 @@
               </li>
             </ul>
           </div>
+
           <div id="login_menu">
-              <ul>
-                
-                <li class="login_menu_text">
-                  <a class="hyperlink_color link_animation" href="/HTML/about.html"
-                    >Register</a
-                  >
-                </li>
-                <li class="login_menu_text">
-                  <a class="hyperlink_color link_animation" href="/HTML/about.html"
-                    >Sign up</a
-                  >
-                </li>
-              </ul>
+            <ul>
+              <li class="login_menu_text">
+                <a
+                  class="hyperlink_color link_animation"
+                  href="/HTML/register.html"
+                  >Register</a
+                >
+              </li>
+              <li class="login_menu_text">
+                <a
+                  class="hyperlink_color link_animation"
+                  href="/HTML/sign_up.html"
+                  >Sign up</a
+                >
+              </li>
+            </ul>
           </div>
+
           <div id="navbar_icons">
-              <ul>
-                <li>
-                  <a
-                    class="material-symbols-outlined nav_bar_icon link_animation"
-                    href="/HTML/destinations.html"
-                  >search 
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="material-symbols-outlined nav_bar_icon link_animation"
-                    href="/HTML/destinations.html"
-                  >home 
-                  </a>
-                </li>
-                <li class="display_none" >
-                  <a
-                    class="material-symbols-outlined nav_bar_icon link_animation"
-                    href="/HTML/destinations.html"
-                  >menu
-                  </a>
-                </li>
-              </ul>
+            <ul>
+              <li>
+                <a
+                  class="material-symbols-outlined nav_bar_icon link_animation"
+                  href="/HTML/search.html"
+                  >search</a
+                >
+              </li>
+              <li>
+                <a
+                  class="material-symbols-outlined nav_bar_icon link_animation"
+                  href="/HTML/home.html"
+                  >home</a
+                >
+              </li>
+              <li class="display_none">
+                <a
+                  class="material-symbols-outlined nav_bar_icon link_animation"
+                  href="/HTML/menu.html"
+                  >menu</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+
       <div id="site_main_content">
-        <div class="website_section" id="discover_section">
-          <div id="discover_box">
+        <div name="Intro Webpage" class="section content_container">
+          <div class="content_vertical">
             <h1>
-              <span>Webpage Styles:</span><br />
+              <span>Webpage Styles</span><br />
               This Webpage shows <br />
               the samples of the styling
             </h1>
             <p>
-              Here you will find all the Styling of the text and color palette of the website.
+              Here you will find all the Styling of the text and color palette
+              of the website.
             </p>
           </div>
         </div>
-        <div class="website_section" id="color_palettes">
-          <div class="content_container_color">
-            <div class="content">
-              <h1>Heading 1 <strong> (Strong)</strong></h1></h1>
-              <h2>Heading 2 <strong> (Strong)</strong></h2>
-              <h3>Heading 3 <strong> (Strong)</strong></h3>
-              <h4>Heading 4 <strong> (Strong)</strong></h4>
-              <h5>Heading 5 <strong> (Strong)</strong></h5>
-              <h6>Heading 6 <strong> (Strong)</strong></h6>
-              <p>Paragraph <strong> (Strong)</strong></p>
-              <!-- Text Variations -->
+
+        <div name="Headings and Text" class="section content_container-color">
+          <div class="content_vertical">
+            <h1>Heading 1 <strong>(Strong)</strong></h1>
+            <h2>Heading 2 <strong>(Strong)</strong></h2>
+            <h3>Heading 3 <strong>(Strong)</strong></h3>
+            <h4>Heading 4 <strong>(Strong)</strong></h4>
+            <h5>Heading 5 <strong>(Strong)</strong></h5>
+            <h6>Heading 6 <strong>(Strong)</strong></h6>
+            <p>Paragraph <strong>(Strong)</strong></p>
+            <h1>
+              <span>Heading 1 (SPAN &<strong> Strong)</strong></span>
+            </h1>
+            <h2>
+              <span>Heading 2 (SPAN &<strong> Strong)</strong></span>
+            </h2>
+            <h3>
+              <span>Heading 3 (SPAN &<strong> Strong)</strong></span>
+            </h3>
+            <h4>
+              <span>Heading 4 (SPAN &<strong> Strong)</strong></span>
+            </h4>
+            <h5>
+              <span>Heading 5 (SPAN &<strong> Strong)</strong></span>
+            </h5>
+            <h6>
+              <span>Heading 6 (SPAN &<strong> Strong)</strong></span>
+            </h6>
+            <p>
+              <span>Paragraph (SPAN &<strong> Strong)</strong></span>
+            </p>
+            <!-- Text Variations -->
             <!--<div class="fake_content"></div>-->
           </div>
+          <div class="content_horizontal">
+            <div id="btn_01">
+              <button class="btn">Button 01</button>
+            </div>
+          </div>
         </div>
 
-        <div class="section" id="site_color_palette">
-          <p>Gray Color Palette</p>
-          <div id="color_palette_content_grays">
-            <div class="color_sample" id="gray-color-100"></div>
-            <div class="color_sample" id="gray-color-200"></div>
-            <div class="color_sample" id="gray-color-300"></div>
-            <div class="color_sample" id="gray-color-400"></div>
-            <div class="color_sample" id="gray-color-500"></div>
-            <div class="color_sample" id="gray-color-600"></div>
-            <div class="color_sample" id="gray-color-700"></div>
-            <div class="color_sample" id="gray-color-800"></div>
-            <div class="color_sample" id="gray-color-900"></div>
-          </div>
-          <p>Primary Color Palette</p>
-          <div id="color_palette_content_grays">
-            <div class="color_sample" id="primary-color-100"></div>
-            <div class="color_sample" id="primary-color-200"></div>
-            <div class="color_sample" id="primary-color-300"></div>
-            <div class="color_sample" id="primary-color-400"></div>
-            <div class="color_sample" id="primary-color-500"></div>
-            <div class="color_sample" id="primary-color-600"></div>
-            <div class="color_sample" id="primary-color-700"></div>
-            <div class="color_sample" id="primary-color-800"></div>
-            <div class="color_sample" id="primary-color-900"></div>
-          </div>
+        <div name="Color Palettes" class="section content_container-gray">
+          <div class="content" id="container_palettes">
+            <h4>Gray Color Palette</h4>
+            <div id="color_palette">
+              <div class="color_sample" id="gray-color-100"></div>
+              <div class="color_sample" id="gray-color-200"></div>
+              <div class="color_sample" id="gray-color-300"></div>
+              <div class="color_sample" id="gray-color-400"></div>
+              <div class="color_sample" id="gray-color-500"></div>
+              <div class="color_sample" id="gray-color-600"></div>
+              <div class="color_sample" id="gray-color-700"></div>
+              <div class="color_sample" id="gray-color-800"></div>
+              <div class="color_sample" id="gray-color-900"></div>
+            </div>
 
-          <p>Secondary Color Palette</p>
-          <div id="color_palette_content_grays">
-            <div class="color_sample" id="secondary-color-100"></div>
-            <div class="color_sample" id="secondary-color-200"></div>
-            <div class="color_sample" id="secondary-color-300"></div>
-            <div class="color_sample" id="secondary-color-400"></div>
-            <div class="color_sample" id="secondary-color-500"></div>
-            <div class="color_sample" id="secondary-color-600"></div>
-            <div class="color_sample" id="secondary-color-700"></div>
-            <div class="color_sample" id="secondary-color-800"></div>
-            <div class="color_sample" id="secondary-color-900"></div>
-          </div>
-          
+            <h4>Primary Color Palette</h4>
+            <div id="color_palette">
+              <div class="color_sample" id="primary-color-100"></div>
+              <div class="color_sample" id="primary-color-200"></div>
+              <div class="color_sample" id="primary-color-300"></div>
+              <div class="color_sample" id="primary-color-400"></div>
+              <div class="color_sample" id="primary-color-500"></div>
+              <div class="color_sample" id="primary-color-600"></div>
+              <div class="color_sample" id="primary-color-700"></div>
+              <div class="color_sample" id="primary-color-800"></div>
+              <div class="color_sample" id="primary-color-900"></div>
+            </div>
 
-        </div>
+            <h4>Secondary Color Palette</h4>
+            <div id="color_palette">
+              <div class="color_sample" id="secondary-color-100"></div>
+              <div class="color_sample" id="secondary-color-200"></div>
+              <div class="color_sample" id="secondary-color-300"></div>
+              <div class="color_sample" id="secondary-color-400"></div>
+              <div class="color_sample" id="secondary-color-500"></div>
+              <div class="color_sample" id="secondary-color-600"></div>
+              <div class="color_sample" id="secondary-color-700"></div>
+              <div class="color_sample" id="secondary-color-800"></div>
+              <div class="color_sample" id="secondary-color-900"></div>
+            </div>
+          </div>
         </div>
       </div>
+
       <div id="site_footer">
-        <!-- Footer content here -->
         <ul id="footer_container">
           <li>
             <a href="https://www.instagram.com">
@@ -189,7 +233,7 @@
             <a href="https://www.facebook.com">
               <img
                 src="/Assets/index/images/highlights-section/facebook.png"
-                alt="facebook Logo"
+                alt="Facebook Logo"
               />
             </a>
           </li>
