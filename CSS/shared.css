@@ -62,7 +62,7 @@ body {
 .hyperlink,
 .hyperlink_color {
   font-family: "Raleway";
-  color: rgba(var(--gray-color-300));
+  color: rgba(var(--gray-color-400));
   transition: 0.5s;
 }
 
@@ -123,15 +123,15 @@ body {
   --primary-color-800: 0, 60, 60;
   --primary-color-900: 0, 40, 40;
   /* === Secondary Color Palette ===*/
-  --secondary-color-100: 255, 233, 226; /* Lightest shade */
-  --secondary-color-200: 255, 210, 202;
-  --secondary-color-300: 255, 187, 178;
-  --secondary-color-400: 255, 164, 155;
-  --secondary-color-500: 248, 99, 70; /* Base color */
-  --secondary-color-600: 232, 89, 63;
-  --secondary-color-700: 216, 79, 56;
-  --secondary-color-800: 200, 69, 49;
-  --secondary-color-900: 184, 59, 42; /* Darkest shade */
+  --secondary-color-100: 255, 255, 204; /* lighter shade */
+  --secondary-color-200: 255, 255, 153;
+  --secondary-color-300: 255, 255, 102;
+  --secondary-color-400: 255, 255, 51;
+  --secondary-color-500: 255, 209, 23; /* base color */
+  --secondary-color-600: 255, 190, 20;
+  --secondary-color-700: 255, 170, 17;
+  --secondary-color-800: 255, 150, 14;
+  --secondary-color-900: 255, 130, 11;
 }
 
 #test {
@@ -292,7 +292,7 @@ bdo {
   height: 100%;
   background: radial-gradient(
     circle at bottom,
-    rgba(var(--primary-color-700), 1),
+    rgba(var(--primary-color-600), 1),
     rgba(var(--primary-color-500), 0.2)
   );
 }

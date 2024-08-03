@@ -1,33 +1,3 @@
-:root {
-  /* grays palette*/
-  --gray-color-100: 249, 249, 249;
-  --gray-color-200: 221, 221, 221;
-  --gray-color-300: 193, 193, 193;
-  --gray-color-400: 165, 165, 165;
-  --gray-color-500: 137, 137, 137;
-  --gray-color-600: 109, 109, 109;
-  --gray-color-700: 81, 81, 81;
-  --gray-color-800: 53, 53, 53;
-  --gray-color-900: 34, 34, 34;
-  --primary-color-100: 0, 200, 200; /* lighter shade */
-  --primary-color-200: 0, 180, 180;
-  --primary-color-300: 0, 160, 160;
-  --primary-color-400: 0, 140, 140;
-  --primary-color-500: 0, 120, 120; /* base color */
-  --primary-color-600: 0, 100, 100;
-  --primary-color-700: 0, 80, 80;
-  --primary-color-800: 0, 60, 60;
-  --primary-color-900: 0, 40, 40;
-  /* Color palette */
-  --light-seafoam-green: 168, 218, 220;
-  --deep-sky-blue: 0, 175, 255;
-  --slate-blue: 83, 133, 141;
-  --illuminating-emerald: 57, 153, 126;
-  --old-gold: 209, 192, 76;
-  --charcoal-blue: 21, 24, 50;
-  --charcoal: 54, 68, 79;
-}
-
 #site_color_palette {
   /* Layout */
   display: flex;

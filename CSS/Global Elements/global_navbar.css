@@ -29,13 +29,13 @@
 }
 
 #main_logo a:hover {
-  color: rgba(var(--primary-color-300));
+  color: rgba(var(--secondary-color-500));
   font-weight: 700;
 }
 
 #main_logo a i {
   font-size: 2.1rem;
-  color: rgba(var(--primary-color-300));
+  color: rgba(var(--secondary-color-500), 1);
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 15;
 }
 
@@ -117,18 +117,23 @@
 
 .nav_bar_icon {
   font-size: 1.3rem;
-  color: rgba(var(--gray-color-300));
+  color: rgba(var(--secondary-color-500), 1);
   text-align: center;
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 15;
 }
 
 .nav_bar_icon:hover {
   color: rgba(var(--gray-color-200));
-  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 15;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 15;
 }
 
 /* === Media Query === */
 
 @media (max-width: 48rem) {
+  #main_logo a {
+    color: rgba(var(--secondary-color-500), 1);
+  }
+
   #navbar_links {
     display: none;
   }
