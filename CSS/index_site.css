@@ -41,10 +41,7 @@
   margin: 0;
   padding: 1.5%;
 }
-#discover_box h1 span {
-  color: rgba(var(--deep-sky-blue));
-}
-#discover_box p {
+#discover_box #discover_box p {
   margin: 0;
   padding: 1%;
   font-size: medium;
@@ -55,8 +52,6 @@
   color: rgba(var(--light-beige));
 }
 #discover_box a {
-  margin: 1.5%;
-  padding: 1%;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -99,22 +94,6 @@
 }
 
 /* === DISCOVERY SECTION ANIMATIONS === */
-@keyframes button-animation-rev {
-  0% {
-    background-position: top right;
-  }
-  100% {
-    background-position: top left;
-  }
-}
-@keyframes button-animation {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: top right;
-  }
-}
 
 /* === HIGHLIGHTS SECTION === */
 
