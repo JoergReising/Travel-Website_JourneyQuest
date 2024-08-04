@@ -5,20 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JourneyQuest</title>
 
-     <!-- FONTS API-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-     <!-- ICONS -->
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-     <!-- CSS Style -->
-     <link rel="stylesheet" href="/CSS/Global Elements/shared.css" />
-     <link rel="stylesheet" href="/CSS/Global Elements/top_announcement.css" />
-     <link rel="stylesheet" href="/CSS/Global Elements/global_navbar.css" />
-     <link rel="stylesheet" href="/CSS/index_site.css">
-     <link rel="stylesheet" href="/CSS/color_palette.css" />
-     
-     <link rel="stylesheet" href="/CSS/Global Elements/global_footer.css" />
+    <!-- FONTS API-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="/CSS/Global Elements/shared.css" />
+    <link rel="stylesheet" href="/CSS/Global Elements/top_announcement.css" />
+    <link rel="stylesheet" href="/CSS/Global Elements/global_navbar.css" />
+    <link rel="stylesheet" href="/CSS/index_site.css" />
+    <link rel="stylesheet" href="/CSS/color_palette.css" />
+
+    <link rel="stylesheet" href="/CSS/Global Elements/global_footer.css" />
   </head>
   <body>
     <div id="site_container">
@@ -115,36 +121,27 @@
       </div>
 
       <div id="site_main_content">
-        <div class="section" id="discover_section">
-          <div id="discover_box">
+        <div name="intro_webpage" class="section">
+          <div name="discover_box" class="content_vertical">
             <h1>
-              <span>JourneyQuest:</span><br/>
-              Your Passport to <br />
-              the World's Wonders
+              <span>JourneyQuest:</span><br />
+              Your Passport to the World's Wonders
             </h1>
             <p>
               Embark on a journey to explore new places, immerse yourself in
               diverse cultures, and learn about the world's hidden gems.
             </p>
+            <br />
+            <br />
             <a href="destinations.html">
-              <span class="discover_box_button"> Explore Now &rarr; </span>
+              <button class="btn">Explore Now &rarr;</button>
             </a>
+            <br />
           </div>
         </div>
 
-        <div id="btn">
-          <button class="btn">
-            <a href="/HTML/Styles_and_Examples.html">Styles</a>
-          </button>
-        </div>
-
-        <a href="/HTML/Styles_and_Examples.html">STYLES
-          
-        </a>
-
-        <div class="section" id="destinations_section">
-          <div id="destinations_container">
-            </p>
+        <div name="destinations" class="section content_container-gray">
+          <div class="content_vertical" id="destinations_container">
             <h2>
               Experience the Wonders <br />
               of Iconic Destinations
@@ -156,33 +153,33 @@
               <br />
               Find your next extraordinary destination below.
             </p>
-            <ul id="destinations_content">
-              <li class="destination">
+            <ul class="content_horizontal">
+              <li class="destination_item">
                 <img
                   src="/Assets/index/images/highlights-section/miami.jpg"
                   alt="Miami"
                 />
                 <p class="destination_name">Miami <span>USA</span></p>
               </li>
-              <li class="destination">
+              <li class="destination_item">
                 <img
                   src="/Assets/index/images/highlights-section/munich.jpg"
                   alt="Munich"
                 />
                 <p class="destination_name">Munich <span>Germany</span></p>
               </li>
-              <li class="destination">
+              <li class="destination_item">
                 <img
                   src="/Assets/index/images/highlights-section/paris.jpg"
                   alt="Paris"
                 />
-                <p class="destination_name" >Paris <span>France</span></p>
+                <p class="destination_name">Paris <span>France</span></p>
               </li>
             </ul>
-          </div>
-        </div>
-        <div name="Color Palettes" class="section content_container-gray">
-          <div class="content">
+
+            <a href="/HTML/Styles_and_Examples.html">
+              <button class="btn">Website Styling &rarr;</button>
+            </a>
           </div>
         </div>
       </div>
@@ -191,16 +188,22 @@
         <!-- Footer content here -->
         <ul id="footer_container">
           <li>
-              <a href="https://www.instagram.com">
-                  <img src="/Assets/index/images/highlights-section/insta.png" alt="Instagram Logo" />
-              </a>
+            <a href="https://www.instagram.com">
+              <img
+                src="/Assets/index/images/highlights-section/insta.png"
+                alt="Instagram Logo"
+              />
+            </a>
           </li>
           <li>
-              <a href="https://www.facebook.com">
-                  <img src="/Assets/index/images/highlights-section/facebook.png" alt="facebook Logo" />
-              </a>
+            <a href="https://www.facebook.com">
+              <img
+                src="/Assets/index/images/highlights-section/facebook.png"
+                alt="facebook Logo"
+              />
+            </a>
           </li>
-      </ul>
+        </ul>
       </div>
     </div>
   </body>

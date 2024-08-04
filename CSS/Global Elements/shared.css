@@ -497,6 +497,7 @@ h6 span {
 .content_vertical {
   width: calc(100% - 4rem);
   margin: 2rem;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -530,6 +531,9 @@ h6 span {
 }
 
 @media (max-width: 48rem) {
+  html {
+    font-size: 13px;
+  }
   #main_logo a {
     color: rgba(var(--secondary-color-500), 1);
   }
@@ -544,5 +548,8 @@ h6 span {
 
   .display_none {
     display: inline;
+  }
+  .content_horizontal {
+    flex-direction: column;
   }
 }
