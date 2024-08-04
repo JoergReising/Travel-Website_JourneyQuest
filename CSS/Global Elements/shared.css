@@ -387,7 +387,6 @@ h6 span {
 
 .btn:active {
   color: rgba(var(--gray-color-900));
-  font-weight: ;
 }
 
 #btn_01 {
