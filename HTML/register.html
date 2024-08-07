@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="/CSS/Global Elements/top_announcement.css" />
     <link rel="stylesheet" href="/CSS/Global Elements/global_navbar.css" />
     <link rel="stylesheet" href="/CSS/Global Elements/global_footer.css" />
+    <link rel="stylesheet" href="/CSS/register.css" />
   </head>
   <body>
     <div id="site_container">
@@ -124,8 +125,8 @@
         <div name="Intro Webpage" class="section content_container">
           <div class="content_vertical">
             <h1>
-              <span>Sign in</span><br />
-              or Register
+              <span>Register</span><br />
+              <form action=""></form>
             </h1>
             <p>
               Please enter your credentials in order to get more exclusive
@@ -135,17 +136,73 @@
           </div>
         </div>
 
-        <div name="Headings and Text" class="section content_container-gray">
-          <form class="content_vertical" action="" method="POST">
-            <label for="username"> USERNAME</label>
-            <input type="email" name="Username" id="username" />
-            <label for="password">PASSWORD</label>
-            <input type="password" name="Password" id="password" />
-            <button class="btn">Log In &rarr;</button>
+        <div name="Register_form" class="section content_container-color">
+          <form class="content_vertical" action="" method="GET">
+            <label for="username"> YOUR NAME</label>
+            <input type="text" name="username" id="username" />
+            <label for="e-mail">E-MAIL</label>
+            <input type="e-mail" name="e-mail" id="e-mail" />
+            <label for="age">YOUR AGE</label>
+            <input type="number" name="age" id="age" />
+            <label for="password">YOUR PASSWORD</label>
+            <input type="password" name="password" id="password" />
+            <label for="birthday">YOUR BIRTHDAY</label>
+            <input type="date" name="birthday" id="birthday" />
+            <label for="usermessage">SOME MESSAGE?!?</label>
+            <textarea name="usermessage" id="usermessage"></textarea>
+            <label for="selectlanguage">YOUR LANGUAGE</label>
+            <select id="selectlanguage" name="Language">
+              <option value="DE">Deutsch</option>
+              <option value="EN">English</option>
+              <option value="ES">Espanol</option>
+            </select>
+            <hr />
+            <h4>How would you like to verify your account</h4>
             <br />
-            <a href="#">Do you forget your password?</a>
+            <div id="acc_verify_box">
+              <div id="acc_verify_box_options">
+                <div id="acc_verify_box_option_box">
+                  <input
+                    type="radio"
+                    name="verification"
+                    id="ver_e-mail"
+                    value="e-mail"
+                  />
+                  <label for="ver_e-mail">Via E-mail</label>
+                </div>
+                <div id="acc_verify_box_option_box">
+                  <input
+                    type="radio"
+                    name="verification"
+                    id="ver_phonecall"
+                    value="phonecall"
+                  />
+                  <label for="ver_phonecall">Via Phone call</label>
+                </div>
+                <div id="acc_verify_box_option_box">
+                  <input
+                    type="radio"
+                    name="verification"
+                    id="ver_SMS"
+                    value="SMS"
+                  />
+                  <label for="ver_SMS">Via text message (SMS)</label>
+                </div>
+              </div>
+            </div>
+
             <br />
-            <a href="/HTML/register.html"> Click Here to Register! </a>
+            <div id="acc_verify_box_option_box">
+              <label for="agree-terms"
+                >Do you agree with our Terms and conditions?</label
+              >
+              <input type="checkbox" id="agree-terms" />
+            </div>
+            <br />
+            <hr />
+            <br />
+            <button class="btn">Register &rarr;</button>
+            <br />
           </form>
         </div>
       </div>

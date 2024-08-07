@@ -1,0 +1,12 @@
+#acc_verify_box_options {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#acc_verify_box_option_box {
+  display: flex;
+  flex: row;
+  align-items: center;
+}

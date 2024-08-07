@@ -100,6 +100,20 @@ a {
 }
 
 /* === 1.1. Base font size for paragraphs === */
+a {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-family: "Raleway";
+  font-weight: 400;
+  letter-spacing: 0;
+  color: rgba(var(--secondary-color-100));
+}
+
+a:hover {
+  color: rgba(var(--secondary-color-700));
+}
+
 p {
   margin: 0;
   padding: 1rem;
@@ -341,13 +355,13 @@ h6 span {
   content: "";
   background: linear-gradient(
     45deg,
-    rgba(var(--primary-color-100)),
+    rgba(var(--gray-color-100)),
     rgba(var(--secondary-color-300)),
-    rgba(var(--primary-color-100)),
+    rgba(var(--gray-color-100)),
     rgba(var(--secondary-color-300)),
-    rgba(var(--primary-color-100)),
+    rgba(var(--gray-color-100)),
     rgba(var(--secondary-color-300)),
-    rgba(var(--primary-color-100))
+    rgba(var(--gray-color-100))
   );
   position: absolute;
   top: -1px;
@@ -470,7 +484,9 @@ h6 span {
   display: none;
 }
 
-input {
+input,
+textarea,
+select {
   padding: 0.5rem;
   margin: 1rem;
   border: none;
@@ -490,6 +506,10 @@ label {
   font-weight: 400;
   letter-spacing: 0;
   color: rgba(var(--secondary-color-500));
+}
+
+hr {
+  width: 90%;
 }
 
 @media (max-width: 48rem) {
